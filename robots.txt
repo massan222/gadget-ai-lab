@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://massan222.github.io/gadget-ai-lab/sitemap.xml
