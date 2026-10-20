@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スマートリモコンで始めるスマートホーム入門｜ハブ2とRemo | ガジェットとAIの作業部屋</title>
+<meta name="description" content="スマートリモコンで何ができて何ができないかを初心者向けに整理しました。SwitchBot ハブ2と Nature Remo mini 2 の違い、選び方の要点、次に揃えたい機器まで紹介します。">
+
+<meta property="og:type" content="article"><meta property="og:title" content="スマートリモコンで始めるスマートホーム入門｜ハブ2とRemo">
+<meta property="og:description" content="スマートリモコンで何ができて何ができないかを初心者向けに整理しました。SwitchBot ハブ2と Nature Remo mini 2 の違い、選び方の要点、次に揃えたい機器まで紹介します。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/smart-remote-beginner-hub2-remo/">
+<meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/24.png">
+<link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/smart-remote-beginner-hub2-remo/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "スマートリモコンで始めるスマートホーム入門｜ハブ2とRemo", "datePublished": "2026-10-20T21:45:30", "dateModified": "2026-10-20T21:45:30", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/24.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/smart-remote-beginner-hub2-remo/"}</script>
+
+<link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  /* 作業部屋風（2026-10-19）。色はここの変数で決める */
+  :root { --bg:#f3ebdd; --card:#fffaf1; --txt:#3a2a1d; --sub:#8a7562; --line:#e4d6c1; --acc:#c0643b; --acc-dark:#8f4524; --leaf:#6e8b5b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+    font:16px/1.85 "Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Meiryo",sans-serif; }
+  a { color:var(--acc); }
+  .bar { height:10px; background:repeating-linear-gradient(90deg,#a9784f 0 18px,#b98a60 18px 36px,#9c6c45 36px 54px); }
+  header .in { max-width:1080px; margin:0 auto; padding:16px 20px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .logo { display:flex; align-items:center; gap:12px; font-weight:700; font-size:19px; color:var(--txt); text-decoration:none; }
+  .ico { width:42px; height:42px; border-radius:50%; background:var(--acc); color:#fff; display:grid; place-items:center;
+    font-size:20px; box-shadow:0 3px 0 var(--acc-dark); flex:none; }
+  nav { margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; }
+  nav a { padding:5px 14px; border-radius:999px; background:var(--card); border:1px solid var(--line); font-size:13px;
+    color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--acc); border-color:var(--acc); }
+  main { max-width:1080px; margin:0 auto; padding:10px 20px 60px; }
+  .narrow { max-width:820px; margin:0 auto; }
+  .meta { color:var(--sub); font-size:13px; }
+
+  /* パンくずと「トップへ戻る」 */
+  .crumbs { font-size:13px; color:var(--sub); margin:6px 0 14px; }
+  .crumbs a { color:var(--sub); text-decoration:none; } .crumbs a:hover { color:var(--acc); }
+  .crumbs span { margin:0 6px; opacity:.6; }
+  .back { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:34px 0 10px; }
+  .btn { display:inline-block; background:var(--acc); color:#fff; padding:9px 22px; border-radius:999px; font-weight:700;
+    text-decoration:none; box-shadow:0 3px 0 var(--acc-dark); }
+  .btn.sub { background:var(--card); color:var(--txt); border:1px solid var(--line); box-shadow:0 3px 0 var(--line); }
+
+  /* TOP の大きな1本 */
+  .welcome { display:grid; grid-template-columns:1fr 1.1fr; gap:24px; align-items:center; background:var(--card);
+    border:1px solid var(--line); border-radius:22px; padding:22px; box-shadow:0 6px 0 rgba(169,120,79,.18);
+    color:var(--txt); text-decoration:none; }
+  .welcome img { width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:16px; display:block; background:var(--line); }
+  .pin { display:inline-block; background:var(--leaf); color:#fff; font-size:12px; padding:3px 12px; border-radius:999px; }
+  .welcome h2 { font-size:23px; line-height:1.5; margin:10px 0 8px; } .welcome p { color:var(--sub); margin:0 0 14px; }
+  .about { display:flex; gap:14px; align-items:center; margin:26px 0 6px; padding:14px 18px; border:2px dashed var(--line);
+    border-radius:16px; color:var(--sub); font-size:14px; }
+  .about b { color:var(--txt); }
+  h2.sec { font-size:19px; margin:30px 0 14px; } h2.sec::before { content:"🛠"; margin-right:8px; }
+
+  /* 画像付きカードの並び（TOP・カテゴリ・関連記事で共通） */
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .acard { display:block; background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden;
+    color:var(--txt); text-decoration:none; transition:.18s; box-shadow:0 4px 0 rgba(169,120,79,.14); }
+  .acard:hover { transform:translateY(-3px) rotate(-.3deg); box-shadow:0 8px 0 rgba(169,120,79,.2); }
+  .acard .thumb { aspect-ratio:16/9; background:var(--line); }
+  .acard img { width:100%; height:100%; object-fit:cover; display:block; }
+  .acard .body { padding:12px 16px 16px; }
+  .label { font-size:11px; color:var(--acc); font-weight:700; }
+  .acard h3 { font-size:15px; line-height:1.55; margin:4px 0 6px; }
+  .acard .date { font-size:12px; color:var(--sub); margin:0; }
+
+  /* 固定ページ（運営者情報など）の囲み */
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 22px; margin-bottom:16px; }
+
+  /* 記事本文 */
+  article { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px 30px; box-shadow:0 6px 0 rgba(169,120,79,.14); }
+  article h1 { font-size:26px; line-height:1.5; margin:4px 0 8px; }
+  .pr { background:#fff3dc; border:1px solid #f0d29a; border-radius:10px; padding:8px 12px; font-size:14px; margin:0 0 16px; }
+  article h2 { border-left:6px solid var(--acc); background:linear-gradient(90deg,rgba(192,100,59,.08),transparent);
+    padding:6px 12px; border-radius:0 10px 10px 0; margin-top:38px; font-size:21px; }
+  article h3 { margin-top:28px; color:var(--acc-dark); }
+  article img { max-width:100%; height:auto; border-radius:12px; }
+  article table { border-collapse:collapse; width:100%; font-size:14px; display:block; overflow-x:auto; }
+  article th, article td { border:1px solid var(--line); padding:6px 8px; }
+  article th { background:#f7eedf; }
+  article a[rel~="sponsored"] { display:inline-block; background:var(--acc); color:#fff; padding:4px 12px; border-radius:999px;
+    text-decoration:none; font-size:14px; margin:2px 4px 2px 0; }
+  .pcard { display:flex; gap:16px; align-items:center; background:#fff; border:1px solid var(--line); border-radius:16px; padding:14px;
+    margin:18px 0; box-shadow:0 3px 0 rgba(169,120,79,.12); }
+  article .pcard a.pcard-img { flex:0 0 150px; display:block; background:none; padding:0; margin:0; border-radius:10px; }
+  .pcard-img img { width:150px; height:150px; object-fit:contain; border-radius:10px; background:#faf5ec; display:block; }
+  .pcard-body { flex:1; min-width:0; }
+  .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
+  .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
+  .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
+  article .pcard a.pcard-btn { display:inline-block; padding:8px 14px; border-radius:999px; color:#fff; text-decoration:none; font-size:14px; font-weight:700; margin:0; }
+  article .pcard a.pcard-btn.rakuten { background:#bf0000; }
+  article .pcard a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
+
+  footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
+  footer a { color:var(--sub); margin:0 6px; }
+
+  @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
+  @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
+    .pcard-img img { width:100%; height:200px; } }
+  @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="in">
+  <a class="logo" href="https://massan222.github.io/gadget-ai-lab/"><span class="ico">🔧</span>ガジェットとAIの作業部屋</a>
+  <nav><a href="https://massan222.github.io/gadget-ai-lab/category/gadget/">ガジェット・スマートホーム</a><a href="https://massan222.github.io/gadget-ai-lab/category/ai-tools/">AI活用・副業ツール</a><a href="https://massan222.github.io/gadget-ai-lab/about/">運営者情報</a></nav>
+</div></header>
+<main>
+
+<div class="narrow">
+<div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/gadget/">ガジェット・スマートホーム</a><span>›</span>この記事</div>
+<article>
+  <h1>スマートリモコンで始めるスマートホーム入門｜ハブ2とRemo</h1>
+  <div class="meta">公開 2026-10-20 · 更新 2026-10-20 · ガジェット・スマートホーム</div>
+  <p><img src="https://massan222.github.io/gadget-ai-lab/images/24.png" alt="スマートリモコンで始めるスマートホーム入門｜ハブ2とRemo"></p>
+  <p>※本記事はアフィリエイト広告を含みます</p>
+<h2>はじめに</h2>
+<p>「帰宅前にエアコンをつけておきたい」「寝転んだまま照明を消したい」。こうした願いを手軽にかなえる入口が、スマートリモコンです。家電のリモコンが出している赤外線（目に見えない光の信号）を覚えさせて、スマホや音声から代わりに送ってもらう機器を指します。今ある家電を買い替えずに始められるのが大きな利点です。</p>
+<figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/24_1.png" alt="" loading="lazy"></figure>
+
+<p>私は自宅で SwitchBot のハブ・ボット・プラグ・温湿度計を使っています。Stream Deck（ボタンやダイヤルが並んだ操作パネル）から家電を動かすプラグインも自作しました。この記事では、その経験も交えて SwitchBot ハブ2 と Nature Remo mini 2 を中心に、何ができて何ができないかを整理します。後半では、リモコンの次に選ばれることが多いスマートロックと加湿器も紹介します。</p>
+<h2>スマートリモコンでできること・できないこと</h2>
+<h3>できること</h3>
+<ul>
+<li><strong>スマホからの操作</strong>：家の中はもちろん、外出先からもエアコンやテレビ、照明を操作できます。</li>
+<li><strong>スケジュール</strong>：「毎朝6時に暖房オン」のように、決まった時刻に自動で動かせます。</li>
+<li><strong>音声操作</strong>：Alexa などのスマートスピーカーと連携すれば「エアコンつけて」で操作できます。</li>
+<li><strong>センサーを使った自動化</strong>：温度などのセンサーがあるモデルなら「室温が28℃を超えたら冷房」といった条件で動かせます。</li>
+</ul>
+<h3>できないこと（ここが大事です）</h3>
+<p>赤外線は送りっぱなしの一方通行です。そのため、エアコンが本当についたか、今何度に設定されているかを家電側から読み取ることはできません。リモコンの光が届かない位置に置くと、信号そのものが届かない点にも注意が必要です。</p>
+<p>私の自作プラグインでも、ダイヤルを回すとエアコンの温度を変えられます。ただ、エアコンは赤外線リモコン扱いなので今の状態を読み取れず、操作は一方通行です。同じプラグインで操作しているサーキュレーターは状態を読み取れるので、使い勝手の違いははっきり感じます。「操作はできるが状態の確認は苦手」と知っておくと、買ってからのがっかりを防げます。</p>
+<p>また、壁のスイッチで点ける照明は赤外線では操作できません。この場合はスイッチを物理的に押す SwitchBot ボットのような機器が別に必要になります。私もボットを使っていますが、これは「リモコンが無い家電をどうするか」という別の話として考えるのが分かりやすいです。</p>
+<h2>選び方の要点</h2>
+<ol>
+<li><strong>揃えたいメーカーを決める</strong>：同じメーカーで揃えると、1つのアプリで操作や自動化をまとめられます。</li>
+<li><strong>センサーの有無</strong>：温度・湿度・明るさのセンサーがあると、自動化の幅が広がります。</li>
+<li><strong>連携先</strong>：Alexa や Google Home に加え、Matter（メーカーの垣根を越えて機器をつなぐ共通規格）に対応しているかも確認しましょう。</li>
+<li><strong>Wi-Fi 環境</strong>：多くのスマートリモコンは 2.4GHz 帯の Wi-Fi でつながります。ルーターの設定を事前に確認しておくと安心です。</li>
+</ol>
+<h2>商品紹介</h2>
+<h3>SwitchBot ハブ2</h3>
+<p><strong>特徴</strong>：仕様上は温湿度計と光センサーを内蔵し、本体の画面に温度と湿度を表示できます。スケジュールや、複数の家電をまとめて動かす「シーン」に対応し、Matter にも対応しています。SwitchBot のボットやロックなど Bluetooth（近距離無線）でつながる機器を外出先から操作するときの中継役にもなります。価格は執筆時点で7,980円、楽天での評価は4.61（1,982件）です。</p>
+<p><strong>向いている人</strong>：センサーを使った自動化までやりたい人や、この先 SwitchBot 製品を増やしていきたい人に向いています。私自身も SwitchBot のハブを中心にボットやプラグをつないでおり、1つのアプリでまとまるのは便利だと感じています。</p>
+<p><strong>注意点</strong>：設定できる項目が多いぶん、最初は画面の多さに戸惑うかもしれません。他社のスマート家電が中心の家では、メーカーで揃える利点は小さくなります。</p>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09563522/imgrc0078660079.jpg?_ex=400x400" alt="【最大3000円クーポン配布】SwitchBot スマートリモコン 赤外線で家電管理 スマートホーム アレクサ 温湿度計機能付き 光センサー付き Wi-Fi 簡単設定 スケジュール シーンで家電一括操作 遠隔操作 ハブ2 スイッチボット" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【最大3000円クーポン配布】SwitchBot スマートリモコン 赤外線で家電管理 スマートホーム アレクサ 温湿度計機能付き 光センサー付き Wi-Fi 簡単設定 スケジュール シーンで家電一括操作 遠隔操作 ハブ2 スイッチボット</p><p class="pcard-meta">7,980円（執筆時点） · ★4.6（1,982件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%258F%25E3%2583%25962" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+
+<h3>Nature Remo mini 2</h3>
+<p><strong>特徴</strong>：手のひらサイズのシンプルなスマートリモコンです。仕様上は温度センサーを内蔵し、Alexa や Google Home と連携できます。スマホの位置情報（GPS）を使い、「家に近づいたらエアコンをオン」といった操作も設定できます。価格は執筆時点で6,480円、楽天での評価は4.47（1,185件）です。</p>
+<p><strong>向いている人</strong>：まずはエアコンやテレビを操作できれば十分という人や、費用を抑えて始めたい人に向いています。レビューでは、アプリが分かりやすく設定しやすいという声が見られます。</p>
+<p><strong>注意点</strong>：仕様上、湿度や明るさのセンサーは付いていません。湿度を条件にした自動化をしたい場合は、上位モデルや別のセンサーを検討しましょう。</p>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fnature-remo%2Fremo-2w2%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/nature-remo/cabinet/09175334/09175339/imgrc0084126806.jpg?_ex=400x400" alt="【公式店】スマートリモコン Nature Remo mini 2 ネイチャー リモ ミニ アレクサ対応 家電コントローラー マルチリモコン スマートホーム スマート家電 エアコン リモコン テレビ 照明 家電 スマホ 遠隔操作 GPS グーグルホーム Google Home Echo" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【公式店】スマートリモコン Nature Remo mini 2 ネイチャー リモ ミニ アレクサ対応 家電コントローラー マルチリモコン スマートホーム スマート家電 エアコン リモコン テレビ 照明 家電 スマホ 遠隔操作 GPS グーグルホーム Google Home Echo</p><p class="pcard-meta">6,480円（執筆時点） · ★4.5（1,185件） · Nature Remo 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fnature-remo%2Fremo-2w2%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DNature%2BRemo%2Bmini%2B2" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+
+<h3>SwitchBot ロックPro セット（次の一歩に）</h3>
+<p><strong>特徴</strong>：玄関の鍵（サムターン＝内側のつまみ）に取り付けて、スマホなどで解錠・施錠できるスマートロックです。商品名の表記では、Suica カードでの解錠やオートロックに対応し、物理鍵も引き続き使えます。価格は執筆時点で18,980円、評価は4.6（2,007件）です。</p>
+<p><strong>向いている人</strong>：鍵の閉め忘れが気になる人や、すでに SwitchBot のハブを持っている人に向いています。</p>
+<p><strong>注意点</strong>：取り付けられるかは玄関のつまみの形によって変わるため、購入前に対応状況の確認をおすすめします。カード解錠に必要な機器がセットに含まれているかも、商品ページで確認してください。</p>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000001001%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09377966/09377967/imgrc0088773509.jpg?_ex=400x400" alt="【最大3000円クーポン ブランドデー】【Suicaカード解錠できる】SwitchBot スイッチボット ロック スマートロック ドアロックProセット スマートロックプロ Alexa対応 鍵 開錠 物理鍵 取付簡単 防犯対策 玄関 寝室 オートロック" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【最大3000円クーポン ブランドデー】【Suicaカード解錠できる】SwitchBot スイッチボット ロック スマートロック ドアロックProセット スマートロックプロ Alexa対応 鍵 開錠 物理鍵 取付簡単 防犯対策 玄関 寝室 オートロック</p><p class="pcard-meta">18,980円（執筆時点） · ★4.6（2,007件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000001001%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%25AD%25E3%2583%2583%25E3%2582%25AFPro" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+
+<h3>SwitchBot 加湿器 気化式 4.5L（次の一歩に）</h3>
+<p><strong>特徴</strong>：気化式（水を含んだフィルターに風を当てて加湿する方式）の加湿器です。仕様上は容量4.5L、最大21畳に対応し、加湿量は最大750ml/h、運転音は最小18dBとされています。上から給水でき、フィルターを自動で乾燥させる機能もあります。価格は執筆時点で14,850円、評価は4.55（1,245件）です。</p>
+<p><strong>向いている人</strong>：冬の乾燥が気になり、アプリや温湿度計と組み合わせて加湿を自動化したい人に向いています。</p>
+<p><strong>注意点</strong>：気化式は、加熱して蒸気を出すスチーム式に比べると、加湿の立ち上がりが穏やかな傾向があります。フィルターの定期的なお手入れも必要です。</p>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010905%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/10288175/0918amazon/imgrc0096604178.jpg?_ex=400x400" alt="【最大3000円クーポン ブランドデー】SwitchBot スイッチボット加湿器 気化式 アレクサ 大容量 4.5L 最大21畳対応 最大22.5時間連続稼働 パワフル 加湿 除菌 18dB 静音 省エネ 上から給水 加湿量最大750ml/h フィルター自動乾燥 給水＆お手入れかんたん 防カビ 卓上 寝室" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【最大3000円クーポン ブランドデー】SwitchBot スイッチボット加湿器 気化式 アレクサ 大容量 4.5L 最大21畳対応 最大22.5時間連続稼働 パワフル 加湿 除菌 18dB 静音 省エネ 上から給水 加湿量最大750ml/h フィルター自動乾燥 給水＆お手入れかんたん 防カビ 卓上 寝室</p><p class="pcard-meta">14,850円（執筆時点） · ★4.5（1,245件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010905%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E5%258A%25A0%25E6%25B9%25BF%25E5%2599%25A8%2B%25E6%25B0%2597%25E5%258C%2596%25E5%25BC%258F" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+
+<h2>比較表</h2>
+<table>
+<thead>
+<tr>
+<th>商品</th>
+<th>価格（執筆時点）</th>
+<th>役割</th>
+<th>センサー（仕様上）</th>
+<th>楽天評価</th>
+<th>向いている人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SwitchBot ハブ2</td>
+<td>7,980円</td>
+<td>スマートリモコン・中継役</td>
+<td>温湿度・光</td>
+<td>4.61（1,982件）</td>
+<td>自動化までしたい人</td>
+</tr>
+<tr>
+<td>Nature Remo mini 2</td>
+<td>6,480円</td>
+<td>スマートリモコン</td>
+<td>温度</td>
+<td>4.47（1,185件）</td>
+<td>シンプルに始めたい人</td>
+</tr>
+<tr>
+<td>SwitchBot ロックPro セット</td>
+<td>18,980円</td>
+<td>スマートロック</td>
+<td>―</td>
+<td>4.6（2,007件）</td>
+<td>鍵の閉め忘れ対策</td>
+</tr>
+<tr>
+<td>SwitchBot 加湿器 4.5L</td>
+<td>14,850円</td>
+<td>気化式加湿器</td>
+<td>―</td>
+<td>4.55（1,245件）</td>
+<td>加湿を自動化したい人</td>
+</tr>
+</tbody>
+</table>
+<figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/24_2.png" alt="" loading="lazy"></figure>
+
+<h2>まとめ</h2>
+<p>スマートリモコンは、今ある家電をスマホや音声で動かせるようにする手軽な入口です。一方で、赤外線は一方通行なので、家電の状態を読み取るのは苦手だと覚えておきましょう。</p>
+<p>センサーを使った自動化や SwitchBot 製品での拡張まで考えるなら、ハブ2が候補です。まずは費用を抑えてシンプルに始めたいなら、Nature Remo mini 2 が合っています。慣れてきたら、スマートロックや加湿器を足して少しずつ便利にしていくのがおすすめです。</p>
+</article>
+<div class="back">
+  <a class="btn sub" href="https://massan222.github.io/gadget-ai-lab/category/gadget/">ガジェット・スマートホームの記事一覧</a>
+  <a class="btn" href="https://massan222.github.io/gadget-ai-lab/">← トップへ戻る</a>
+</div>
+</div>
+
+<h2 class="sec">関連記事</h2>
+<div class="grid"><a class="acard" href="https://massan222.github.io/gadget-ai-lab/posts/smart-remote-hub3-nature-remo-compare/">
+  <div class="thumb"><img src="https://massan222.github.io/gadget-ai-lab/images/22.png" alt="" loading="lazy"></div>
+  <div class="body"><span class="label">ガジェット・スマートホーム</span>
+    <h3>スマートリモコンおすすめ比較｜SwitchBot ハブ3・ハブ2とNature Remo mini 2ほか4機種</h3><p class="date">2026.10.16</p></div>
+</a><a class="acard" href="https://massan222.github.io/gadget-ai-lab/posts/smart-remote-hub2-to-hub3/">
+  <div class="thumb"><img src="https://massan222.github.io/gadget-ai-lab/images/17.png" alt="" loading="lazy"></div>
+  <div class="body"><span class="label">ガジェット・スマートホーム</span>
+    <h3>スマートリモコン買い替え比較 ハブ2からハブ3へ乗り換える価値はある？</h3><p class="date">2026.10.07</p></div>
+</a><a class="acard" href="https://massan222.github.io/gadget-ai-lab/posts/smart-remote-switchbot-vs-nature-remo/">
+  <div class="thumb"><img src="https://massan222.github.io/gadget-ai-lab/images/14.png" alt="" loading="lazy"></div>
+  <div class="body"><span class="label">ガジェット・スマートホーム</span>
+    <h3>スマートリモコン比較｜SwitchBotとNature Remo、どちらを選ぶ？4機種の違いと選び方</h3><p class="date">2026.09.30</p></div>
+</a></div>
+
+</main>
+<footer>
+  <a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><a href="https://massan222.github.io/gadget-ai-lab/about/">運営者情報</a><a href="https://massan222.github.io/gadget-ai-lab/disclaimer/">免責事項</a><a href="https://massan222.github.io/gadget-ai-lab/privacy/">プライバシーポリシー</a><a href="https://massan222.github.io/gadget-ai-lab/feed.xml">RSS</a>
+  <div>© 2026 まっさん — 当サイトはアフィリエイト広告を利用しています</div>
+</footer>
+<script data-goatcounter="https://massan.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
