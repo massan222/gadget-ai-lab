@@ -10,7 +10,7 @@
 <meta property="og:description" content="ノートPCの端子が足りない在宅ワーカー向けに、USBハブ・カードリーダー4製品をPC側の端子、HDMI、給電、SDカード対応で比べました。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/usb-hub-card-reader-comparison/">
 <meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/21.png">
 <link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/usb-hub-card-reader-comparison/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ポート不足を解決するUSBハブ・カードリーダー4選｜端子の種類と用途で比べる", "datePublished": "2026-10-14T22:19:46", "dateModified": "2026-10-19T21:43:15", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/21.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/usb-hub-card-reader-comparison/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ポート不足を解決するUSBハブ・カードリーダー4選｜端子の種類と用途で比べる", "datePublished": "2026-10-14T22:19:46", "dateModified": "2026-10-31T08:12:26", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/21.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/usb-hub-card-reader-comparison/"}</script>
 
 <link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,9 +92,35 @@
   .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
   .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
   .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
-  article .pcard a.pcard-btn { display:inline-block; padding:8px 14px; border-radius:999px; color:#fff; text-decoration:none; font-size:14px; font-weight:700; margin:0; }
-  article .pcard a.pcard-btn.rakuten { background:#bf0000; }
-  article .pcard a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  article a.pcard-btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 18px;
+    border-radius:999px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; margin:0; box-sizing:border-box; white-space:nowrap; }
+  article a.pcard-btn.rakuten { background:#bf0000; }
+  article a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .pcard-for { font-size:13px; color:var(--sub); margin:0 0 6px; }
+  /* 記事冒頭の「先に結論」（2026-10-31） */
+  .buybox { background:#fff8ec; border:2px solid #f0d9b5; border-radius:16px; padding:14px 16px; margin:18px 0 26px; }
+  .buybox-h { margin:0 0 8px; font-weight:700; color:var(--acc-dark); font-size:14px; }
+  .buybox-main { display:flex; gap:14px; align-items:center; }
+  article .buybox a.buybox-img { flex:0 0 120px; display:block; background:none; padding:0; margin:0; }
+  .buybox-img img { width:120px; height:120px; object-fit:contain; border-radius:10px; background:#fff; display:block; }
+  .buybox-body { flex:1; min-width:0; }
+  .buybox-lead { margin:0; font-size:13px; color:var(--sub); }
+  .buybox-name { margin:2px 0 4px; font-weight:700; font-size:18px; line-height:1.4; }
+  .buybox-why { margin:0 0 10px; font-size:14px; }
+  .buybox-alts { list-style:none; margin:12px 0 0; padding:10px 0 0; border-top:1px dashed #e6cfa8; }
+  .buybox-alts li { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:14px; }
+  .buybox-label { color:var(--sub); white-space:nowrap; }
+  .buybox-alts b { flex:1; min-width:0; }
+  article a.tbtn { display:inline-flex; align-items:center; min-height:36px; padding:4px 14px; border-radius:999px; background:#bf0000;
+    color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
+  /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
+  .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; }
+  .tbl th, .tbl td { min-width:7em; vertical-align:top; }
+  .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
+  .tbl tr > th:first-child { background:#f7eedf; }
+  .tbl tr.pick td, .tbl tr.pick > :first-child { background:#fff4e0; }
+  .badge { display:inline-block; background:var(--acc); color:#fff; font-size:11px; font-weight:700; border-radius:6px; padding:1px 6px; margin:0 4px 2px 0; }
   .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
 
   footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
@@ -102,7 +128,9 @@
 
   @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
   @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
-    .pcard-img img { width:100%; height:200px; } }
+    .pcard-img img { width:100%; height:200px; }
+    .pcard-btns a.pcard-btn { flex:1; padding:8px 10px; font-size:14px; }
+    .buybox-main { flex-direction:column; align-items:stretch; } article .buybox a.buybox-img { flex:none; align-self:center; } }
   @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
 </style>
 </head>
@@ -118,9 +146,11 @@
 <div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/ai-tools/">AI活用・副業ツール</a><span>›</span>この記事</div>
 <article>
   <h1>ポート不足を解決するUSBハブ・カードリーダー4選｜端子の種類と用途で比べる</h1>
-  <div class="meta">公開 2026-10-14 · 更新 2026-10-19 · AI活用・副業ツール</div>
+  <div class="meta">公開 2026-10-14 · 更新 2026-10-31 · AI活用・副業ツール</div>
   <p><img src="https://massan222.github.io/gadget-ai-lab/images/21.png" alt="ポート不足を解決するUSBハブ・カードリーダー4選｜端子の種類と用途で比べる"></p>
   <p>※本記事はアフィリエイト広告を含みます</p>
+<div class="buybox"><p class="buybox-h">先に結論</p><div class="buybox-main"><a class="buybox-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/usb-hub-card-reader-comparison"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodhammond/cabinet/qg_c_010/qg_c_016_00_0928.jpg?_ex=400x400" alt="QGeem USB-Cハブ 7in1" width="120" height="120" loading="lazy"></a><div class="buybox-body"><p class="buybox-lead">迷ったらこれ</p><p class="buybox-name">QGeem USB-Cハブ 7in1</p><p class="buybox-why">モニター・充電・SDをケーブル1本でまとめられる</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/usb-hub-card-reader-comparison">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DQGeem%2BUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B7in1%2BHDMI" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/amazon/usb-hub-card-reader-comparison">Amazonで探す</a></p></div></div><ul class="buybox-alts"><li><span class="buybox-label">スマホでも読むなら</span><b>MSL FORCE カードリーダー uc0116</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunivision%2Fuc0116%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/usb-hub-card-reader-comparison">楽天</a></li><li><span class="buybox-label">USB-Aを増やすなら</span><b>ベストクリック USBハブ 4ポート</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp-an%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/usb-hub-card-reader-comparison">楽天</a></li></ul></div>
+
 <h2>ノートPCの端子不足、つなぎ替えに手間取っていませんか</h2>
 <p>生成AIで作った画像やカメラで撮った動画をPCに移すたびに、USBメモリを抜いてSDカードを挿し直す。そんなつなぎ替えに時間を取られている方は多いと思います。最近の薄型ノートPCには、USB-C端子が1〜2個しかない機種も珍しくありません。端子が足りないと、作業そのものより「抜き差し」に手間がかかりがちです。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/21_1.png" alt="" loading="lazy"></figure>
@@ -143,7 +173,7 @@ USB-C端子1つに挿すだけで、HDMI（4K出力対応）、USB3.0、SD／mic
 ノートPCを外部モニターにつなぎ、充電・SDカード・USB機器も同時に使いたい人に向いています。机に戻ったらケーブル1本で作業環境がそろう形にしたい方に合います。</p>
 <p><strong>注意点</strong><br />
 商品名には「100W」とありますが、ハブ自体も電力を使うため、PCに届く電力はそれより少なくなるのが一般的です。また、HDMI出力を使うには、PCのUSB-C端子が映像出力（DisplayPort Alt Modeと呼ばれる機能）に対応している必要があります。お使いのPCの仕様を事前に確認しておきましょう。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodhammond/cabinet/qg_c_010/qg_c_016_00_0928.jpg?_ex=400x400" alt="【楽天1位常連】USBハブ USB Type-C ハブ 7in1 HDMI 4K USB3.0 PD対応 SDカードリーダー microSD 100W 変換 アダプタ USB-C ハブ ノートパソコン ノートPC Chromebook surface PC iPhone 18 Pro/17 iPad Air Pro Android Mac USB-C Android QGeem" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【楽天1位常連】USBハブ USB Type-C ハブ 7in1 HDMI 4K USB3.0 PD対応 SDカードリーダー microSD 100W 変換 アダプタ USB-C ハブ ノートパソコン ノートPC Chromebook surface PC iPhone 18 Pro/17 iPad Air Pro Android Mac USB-C Android QGeem</p><p class="pcard-meta">2,980円（執筆時点） · ★4.5（2,046件） · GWAAN</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DQGeem%2BUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B7in1%2BHDMI" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-hub-card-reader-comparison"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodhammond/cabinet/qg_c_010/qg_c_016_00_0928.jpg?_ex=400x400" alt="QGeem USB-Cハブ 7in1" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">QGeem USB-Cハブ 7in1</p><p class="pcard-for">こんな人に：モニター・充電・SDを1本でまとめたい人</p><p class="pcard-meta">2,980円（執筆時点） · ★4.5（2,049件） · GWAAN</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-hub-card-reader-comparison">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DQGeem%2BUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B7in1%2BHDMI" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/usb-hub-card-reader-comparison">Amazonで探す</a></p></div></div>
 
 <h3>MSL FORCE SDカードリーダー（uc0116）：スマホでもカードを読みたい人に</h3>
 <p><strong>特徴</strong><br />
@@ -152,7 +182,7 @@ SDカードとmicroSDカードを読み込めるカードリーダーで、Light
 カメラやドローンで撮った写真を、PCだけでなくiPhoneやタブレットにも直接取り込みたい人に向いています。小型なので、カバンに入れて持ち歩く使い方にも合います。</p>
 <p><strong>注意点</strong><br />
 「2in1」「3in1」など複数の種類があるため、自分の機器の端子に合うものを選ぶ必要があります。Lightning端子のiPhoneは規格上USB2.0相当の速度なので、商品名の「高速」が出るかどうかはつなぐ機器によって変わります。HDMIや充電の機能はないため、端子不足をまとめて解消したい場合はほかのハブと組み合わせることになります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunivision%2Fuc0116%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sunivision/cabinet/2026/imgrc0113774692.jpg?_ex=400x400" alt="【2個目半額/3個目タダ】 SDカードリーダー lightning 高速170Mb/s 2in1/3in1 sdカード usbハブ USB3.0 高速 Type-C 2tb マイクロsdカード sd タイプc データ転送 usbメモリ カードリーダー iPhone 5gbps【iPhone15/16シリーズ対応】 uc0116" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【2個目半額/3個目タダ】 SDカードリーダー lightning 高速170Mb/s 2in1/3in1 sdカード usbハブ USB3.0 高速 Type-C 2tb マイクロsdカード sd タイプc データ転送 usbメモリ カードリーダー iPhone 5gbps【iPhone15/16シリーズ対応】 uc0116</p><p class="pcard-meta">1,080円（執筆時点） · ★4.5（1,525件） · MSL FORCE公式楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunivision%2Fuc0116%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DMSL%2BFORCE%2BSD%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%2Buc0116" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunivision%2Fuc0116%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-hub-card-reader-comparison"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sunivision/cabinet/2026/imgrc0113774692.jpg?_ex=400x400" alt="MSL FORCE カードリーダー uc0116" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">MSL FORCE カードリーダー uc0116</p><p class="pcard-for">こんな人に：iPhoneやタブレットにも写真を取り込みたい人</p><p class="pcard-meta">1,080円（執筆時点） · ★4.5（1,535件） · MSL FORCE公式楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunivision%2Fuc0116%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-hub-card-reader-comparison">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DMSL%2BFORCE%2BSD%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%2Buc0116" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/usb-hub-card-reader-comparison">Amazonで探す</a></p></div></div>
 
 <h3>ベストクリック USBハブ 4ポート：手頃な価格でUSB-Aを増やしたい人に</h3>
 <p><strong>特徴</strong><br />
@@ -161,7 +191,7 @@ USB-A端子1つを4ポートに増やすシンプルなハブです。アルミ�
 デスクトップPCやUSB-A端子のあるノートPCで、マウス・キーボード・USBメモリなどを同時につなぎたい人に向いています。操作パネルやキーボードのように、つなぎっぱなしのUSB機器が多い机でも、ポートを増やす方法として検討しやすい製品です。</p>
 <p><strong>注意点</strong><br />
 商品名にはUSB3.0とUSB2.0の両方が書かれているため、4ポートすべてがUSB3.0かどうかは商品ページで確認してください。USB-C端子しかないPCで使うには、変換アダプタが別に必要です。また、電源アダプタを使わないハブは、電力を多く使う機器を何台もつなぐと動作が不安定になることがあります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp-an%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/bestclick/cabinet/p-a/p-an-01d.jpg?_ex=400x400" alt="楽天1位獲得 USBハブ USB3.0 USB2.0 4ポート対応 1年保証 USBケーブル アダプタ HUB USB-A 拡張 アルミ合金シェル ハブ USB hub 4in1 高速ハブ 高速 データ転送 充電 薄型 小型 コンパクト USB拡張 Windows Mac 5Gbps 軽量 パソコン ノートPC 高耐久性 互換性高 |pre" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">楽天1位獲得 USBハブ USB3.0 USB2.0 4ポート対応 1年保証 USBケーブル アダプタ HUB USB-A 拡張 アルミ合金シェル ハブ USB hub 4in1 高速ハブ 高速 データ転送 充電 薄型 小型 コンパクト USB拡張 Windows Mac 5Gbps 軽量 パソコン ノートPC 高耐久性 互換性高 |pre</p><p class="pcard-meta">899円（執筆時点） · ★4.7（769件） · ベストクリック 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp-an%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUSB%25E3%2583%258F%25E3%2583%2596%2B4%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%2BUSB3.0%2B%25E3%2582%25A2%25E3%2583%25AB%25E3%2583%259F%2B%25E8%2596%2584%25E5%259E%258B" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp-an%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-hub-card-reader-comparison"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/bestclick/cabinet/p-a/p-an-01d.jpg?_ex=400x400" alt="ベストクリック USBハブ 4ポート" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">ベストクリック USBハブ 4ポート</p><p class="pcard-for">こんな人に：手頃な価格でUSB-A端子を増やしたい人</p><p class="pcard-meta">899円（執筆時点） · ★4.7（770件） · ベストクリック 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp-an%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-hub-card-reader-comparison">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUSB%25E3%2583%258F%25E3%2583%2596%2B4%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%2BUSB3.0%2B%25E3%2582%25A2%25E3%2583%25AB%25E3%2583%259F%2B%25E8%2596%2584%25E5%259E%258B" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/usb-hub-card-reader-comparison">Amazonで探す</a></p></div></div>
 
 <h3>ベストクリック Type-Cハブ 5in1：USB-CとUSB-Aを行き来する人に</h3>
 <p><strong>特徴</strong><br />
@@ -170,10 +200,10 @@ USBポートとSD／microSDスロットを備えた5in1のハブです。商品�
 USB-CのノートPCとUSB-AのデスクトップPCを使い分けている人や、SDカードの取り込みとUSB機器の接続を1つで済ませたい人に向いています。HDMIが要らなければ、手頃な価格で必要な機能をそろえやすい構成です。</p>
 <p><strong>注意点</strong><br />
 商品名にHDMI出力やPD充電の記載はないため、モニター接続や充電を同時にしたい場合は別の手段が必要です。USB3.0とUSB2.0の両方が書かれているので、どのポートが高速かは商品ページで確認しましょう。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp0846%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/bestclick/cabinet/b800/p0846-01csale.jpg?_ex=400x400" alt="楽天1位獲得 USBハブ Type-Cハブ 両用 5in1 USB3.0 USB2.0 SDカードリーダー 1年保証 microSD 変換 アダプタ 変換ケーブル タイプC usbc c端子 USB4 usb c ノートパソコン ノートPC Chromebook surface PC iPad mini Air Pro neo Android Mac windows Android |pre" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">楽天1位獲得 USBハブ Type-Cハブ 両用 5in1 USB3.0 USB2.0 SDカードリーダー 1年保証 microSD 変換 アダプタ 変換ケーブル タイプC usbc c端子 USB4 usb c ノートパソコン ノートPC Chromebook surface PC iPad mini Air Pro neo Android Mac windows Android |pre</p><p class="pcard-meta">1,499円（執筆時点） · ★4.7（414件） · ベストクリック 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp0846%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUSB%2BType-C%2B%25E3%2583%258F%25E3%2583%2596%2B5in1%2B%25E4%25B8%25A1%25E7%2594%25A8%2BSD%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp0846%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-hub-card-reader-comparison"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/bestclick/cabinet/b800/p0846-01csale.jpg?_ex=400x400" alt="ベストクリック Type-Cハブ 5in1" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">ベストクリック Type-Cハブ 5in1</p><p class="pcard-for">こんな人に：USB-CとUSB-AのPCを使い分ける人</p><p class="pcard-meta">1,499円（執筆時点） · ★4.7（415件） · ベストクリック 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp0846%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-hub-card-reader-comparison">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUSB%2BType-C%2B%25E3%2583%258F%25E3%2583%2596%2B5in1%2B%25E4%25B8%25A1%25E7%2594%25A8%2BSD%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/usb-hub-card-reader-comparison">Amazonで探す</a></p></div></div>
 
 <h2>比較表</h2>
-<table>
+<div class="tbl"><table>
 <thead>
 <tr>
 <th>製品</th>
@@ -181,15 +211,17 @@ USB-CのノートPCとUSB-AのデスクトップPCを使い分けている人や
 <th>主な機能</th>
 <th>価格（執筆時点）</th>
 <th>楽天の評価（件数）</th>
+<th>購入</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>QGeem USB-Cハブ 7in1</td>
+<tr class="pick">
+<td><span class="badge">おすすめ</span>QGeem USB-Cハブ 7in1</td>
 <td>USB-C</td>
 <td>HDMI 4K／USB3.0／SD・microSD／PD充電</td>
 <td>2,980円</td>
 <td>4.54（2,046件）</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/usb-hub-card-reader-comparison">楽天</a></td>
 </tr>
 <tr>
 <td>MSL FORCE カードリーダー</td>
@@ -197,6 +229,7 @@ USB-CのノートPCとUSB-AのデスクトップPCを使い分けている人や
 <td>SD・microSDの読み込み</td>
 <td>1,080円</td>
 <td>4.52（1,522件）</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunivision%2Fuc0116%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/usb-hub-card-reader-comparison">楽天</a></td>
 </tr>
 <tr>
 <td>ベストクリック 4ポート</td>
@@ -204,6 +237,7 @@ USB-CのノートPCとUSB-AのデスクトップPCを使い分けている人や
 <td>USBポートを4つに増やす</td>
 <td>899円</td>
 <td>4.66（768件）</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp-an%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/usb-hub-card-reader-comparison">楽天</a></td>
 </tr>
 <tr>
 <td>ベストクリック 5in1</td>
@@ -211,9 +245,10 @@ USB-CのノートPCとUSB-AのデスクトップPCを使い分けている人や
 <td>USBポート／SD・microSD</td>
 <td>1,499円</td>
 <td>4.72（412件）</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbestclick%2Fp0846%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/usb-hub-card-reader-comparison">楽天</a></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/21_2.png" alt="" loading="lazy"></figure>
 
 <h2>まとめ</h2>

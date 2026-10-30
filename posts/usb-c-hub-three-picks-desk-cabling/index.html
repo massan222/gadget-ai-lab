@@ -10,7 +10,7 @@
 <meta property="og:description" content="ノートPCやミニPCで差し口が足りなくなった在宅ワーカー向けに、楽天で扱いのあるUSB-Cハブ3製品を給電量・携帯性・価格の3軸で比較。購入前に確認したいポイントも整理しました。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/usb-c-hub-three-picks-desk-cabling/">
 <meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/7.png">
 <link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/usb-c-hub-three-picks-desk-cabling/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "USB-Cハブ6in1/7in1を3製品比較｜副業デスクの配線整理", "datePublished": "2026-09-18T06:24:17", "dateModified": "2026-10-19T21:50:43", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/7.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/usb-c-hub-three-picks-desk-cabling/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "USB-Cハブ6in1/7in1を3製品比較｜副業デスクの配線整理", "datePublished": "2026-09-18T06:24:17", "dateModified": "2026-10-31T08:12:26", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/7.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/usb-c-hub-three-picks-desk-cabling/"}</script>
 
 <link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,9 +92,35 @@
   .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
   .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
   .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
-  article .pcard a.pcard-btn { display:inline-block; padding:8px 14px; border-radius:999px; color:#fff; text-decoration:none; font-size:14px; font-weight:700; margin:0; }
-  article .pcard a.pcard-btn.rakuten { background:#bf0000; }
-  article .pcard a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  article a.pcard-btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 18px;
+    border-radius:999px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; margin:0; box-sizing:border-box; white-space:nowrap; }
+  article a.pcard-btn.rakuten { background:#bf0000; }
+  article a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .pcard-for { font-size:13px; color:var(--sub); margin:0 0 6px; }
+  /* 記事冒頭の「先に結論」（2026-10-31） */
+  .buybox { background:#fff8ec; border:2px solid #f0d9b5; border-radius:16px; padding:14px 16px; margin:18px 0 26px; }
+  .buybox-h { margin:0 0 8px; font-weight:700; color:var(--acc-dark); font-size:14px; }
+  .buybox-main { display:flex; gap:14px; align-items:center; }
+  article .buybox a.buybox-img { flex:0 0 120px; display:block; background:none; padding:0; margin:0; }
+  .buybox-img img { width:120px; height:120px; object-fit:contain; border-radius:10px; background:#fff; display:block; }
+  .buybox-body { flex:1; min-width:0; }
+  .buybox-lead { margin:0; font-size:13px; color:var(--sub); }
+  .buybox-name { margin:2px 0 4px; font-weight:700; font-size:18px; line-height:1.4; }
+  .buybox-why { margin:0 0 10px; font-size:14px; }
+  .buybox-alts { list-style:none; margin:12px 0 0; padding:10px 0 0; border-top:1px dashed #e6cfa8; }
+  .buybox-alts li { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:14px; }
+  .buybox-label { color:var(--sub); white-space:nowrap; }
+  .buybox-alts b { flex:1; min-width:0; }
+  article a.tbtn { display:inline-flex; align-items:center; min-height:36px; padding:4px 14px; border-radius:999px; background:#bf0000;
+    color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
+  /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
+  .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; }
+  .tbl th, .tbl td { min-width:7em; vertical-align:top; }
+  .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
+  .tbl tr > th:first-child { background:#f7eedf; }
+  .tbl tr.pick td, .tbl tr.pick > :first-child { background:#fff4e0; }
+  .badge { display:inline-block; background:var(--acc); color:#fff; font-size:11px; font-weight:700; border-radius:6px; padding:1px 6px; margin:0 4px 2px 0; }
   .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
 
   footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
@@ -102,7 +128,9 @@
 
   @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
   @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
-    .pcard-img img { width:100%; height:200px; } }
+    .pcard-img img { width:100%; height:200px; }
+    .pcard-btns a.pcard-btn { flex:1; padding:8px 10px; font-size:14px; }
+    .buybox-main { flex-direction:column; align-items:stretch; } article .buybox a.buybox-img { flex:none; align-self:center; } }
   @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
 </style>
 </head>
@@ -118,9 +146,11 @@
 <div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/ai-tools/">AI活用・副業ツール</a><span>›</span>この記事</div>
 <article>
   <h1>USB-Cハブ6in1/7in1を3製品比較｜副業デスクの配線整理</h1>
-  <div class="meta">公開 2026-09-18 · 更新 2026-10-19 · AI活用・副業ツール</div>
+  <div class="meta">公開 2026-09-18 · 更新 2026-10-31 · AI活用・副業ツール</div>
   <p><img src="https://massan222.github.io/gadget-ai-lab/images/7.png" alt="USB-Cハブ6in1/7in1を3製品比較｜副業デスクの配線整理"></p>
   <p>※本記事はアフィリエイト広告を含みます</p>
+<div class="buybox"><p class="buybox-h">先に結論</p><div class="buybox-main"><a class="buybox-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/usb-c-hub-three-picks-desk-cabling"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodhammond/cabinet/qg_c_010/qg_c_016_00_0928.jpg?_ex=400x400" alt="QGeem USB-Cハブ 7in1" width="120" height="120" loading="lazy"></a><div class="buybox-body"><p class="buybox-lead">迷ったらこれ</p><p class="buybox-name">QGeem USB-Cハブ 7in1</p><p class="buybox-why">据え置きで充電しながら使うならPD100W記載</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/usb-c-hub-three-picks-desk-cabling">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DQGeem%2BUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B7in1" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/amazon/usb-c-hub-three-picks-desk-cabling">Amazonで探す</a></p></div></div><ul class="buybox-alts"><li><span class="buybox-label">持ち出し中心なら</span><b>ComfyStore USB-Cハブ 6in1</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomfystore%2Fco-usb-1%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/usb-c-hub-three-picks-desk-cabling">楽天</a></li><li><span class="buybox-label">ゲーム機も使うなら</span><b>スターフォーカス USB-Cハブ 7in1</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fstarfocus%2Fsf-7in1%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/usb-c-hub-three-picks-desk-cabling">楽天</a></li></ul></div>
+
 <h2>ノートPCの「差し口が足りない」を片付ける</h2>
 <p>副業やAI関連の作業をノートPCやミニPCで始めると、ある日ふいに端子が足りなくなります。外部モニターをつなぎたい、カメラのSDカードを読み込みたい、そのうえ本体も充電したい。USB-Cポートが1つか2つしかない機種では、ここで手が止まってしまいます。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/7_1.png" alt="" loading="lazy"></figure>
@@ -141,28 +171,29 @@
 <p><strong>特徴</strong>　HDMIの4K出力、USB3.0（従来のUSB2.0より転送が速い規格）、PD100W対応を備える7in1です。カードリーダーはSDとmicroSDの両方に対応します。価格は2,980円（執筆時点）で、レビューは4.54（2,043件）と3製品の中では件数が多めでした。iPhoneやiPad、Chromebook、Surfaceなど幅広い機種への対応が商品ページに記載されています。</p>
 <p><strong>向いている人</strong>　ノートPCを充電しながら外部モニターにつなぎ、デスクに据え置きで使いたい方に向きます。PD100Wの記載があるため、消費電力が大きめのノートPCでも余裕を見込みやすい構成です。カメラとドライブレコーダーの両方のカードを読む機会があるなら、両対応という点も効いてきます。</p>
 <p><strong>注意点</strong>　実際の給電量は接続するACアダプター側の出力にも左右されるため、100Wと書かれていればどんな環境でも100W出るというわけではありません。USB-Aが何口あるかといった内訳も商品情報からは読み取れないので、つなぎたい機器が決まっている方は事前の確認をおすすめします。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodhammond/cabinet/qg_c_010/qg_c_016_00_0928.jpg?_ex=400x400" alt="【楽天1位常連】USBハブ USB Type-C ハブ 7in1 HDMI 4K USB3.0 PD対応 SDカードリーダー microSD 100W 変換 アダプタ USB-C ハブ ノートパソコン ノートPC Chromebook surface PC iPhone 18 Pro/17 iPad Air Pro Android Mac USB-C Android QGeem" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【楽天1位常連】USBハブ USB Type-C ハブ 7in1 HDMI 4K USB3.0 PD対応 SDカードリーダー microSD 100W 変換 アダプタ USB-C ハブ ノートパソコン ノートPC Chromebook surface PC iPhone 18 Pro/17 iPad Air Pro Android Mac USB-C Android QGeem</p><p class="pcard-meta">2,980円（執筆時点） · ★4.5（2,046件） · GWAAN</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DQGeem%2BUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B7in1" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-c-hub-three-picks-desk-cabling"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodhammond/cabinet/qg_c_010/qg_c_016_00_0928.jpg?_ex=400x400" alt="QGeem USB-Cハブ 7in1" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">QGeem USB-Cハブ 7in1</p><p class="pcard-for">こんな人に：据え置きで充電しながら外部モニターを使う人</p><p class="pcard-meta">2,980円（執筆時点） · ★4.5（2,049件） · GWAAN</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgoodhammond%2Fqg_c_016%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-c-hub-three-picks-desk-cabling">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DQGeem%2BUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B7in1" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/usb-c-hub-three-picks-desk-cabling">Amazonで探す</a></p></div></div>
 
 <h3>スターフォーカスの7in1｜ゲーム機への対応も記載</h3>
 <p><strong>特徴</strong>　こちらもHDMIの4K出力、USB3.0、PD急速充電、SDカードリーダーを備える7in1です。価格は3,980円（執筆時点）、レビューは4.46（1,304件）。商品ページにはMacBook AirやiPad Pro、Surfaceに加えてNintendo Switchへの対応も書かれています。</p>
 <p><strong>向いている人</strong>　ノートPCだけでなく携帯ゲーム機も外部モニターにつなぎたい、といった使い回しを考えている方の候補になります。データ移行のしやすさを前面に出した商品説明なので、機種の入れ替えが多い方にも読みやすい構成です。</p>
 <p><strong>注意点</strong>　PDは「急速充電」との記載にとどまり、ワット数が明示されていません。給電量を重視するなら、購入前に出品者へ確認するか、数値の記載がある製品を選ぶほうが安心です。3製品の中では価格が高めですが、その差額がどの仕様に対応するのかは、今回の商品情報だけでは読み取りにくいところです。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fstarfocus%2Fsf-7in1%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/starfocus/cabinet/03546269/7in1hub/hub_slide-01-02.jpg?_ex=400x400" alt="【9/18 いちばの日 P最大7倍】【楽天1位 10冠】USB Type-C ハブ 7in1 USB変換アダプタ HDMI 4K USB3.0 ポート PD急速充電 SDカードリーダー 高速 データ移行 ケーブル USBハブ USB-C タイプC typec SDカード MacBook Air iPad Pro Surface Nintendo Switch iPhone17" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【9/18 いちばの日 P最大7倍】【楽天1位 10冠】USB Type-C ハブ 7in1 USB変換アダプタ HDMI 4K USB3.0 ポート PD急速充電 SDカードリーダー 高速 データ移行 ケーブル USBハブ USB-C タイプC typec SDカード MacBook Air iPad Pro Surface Nintendo Switch iPhone17</p><p class="pcard-meta">3,980円（執筆時点） · ★4.5（1,304件） · スマホメモリ専門スターフォーカス</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fstarfocus%2Fsf-7in1%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B7in1%2BHDMI%2BSD%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fstarfocus%2Fsf-7in1%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-c-hub-three-picks-desk-cabling"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/starfocus/cabinet/03546269/7in1hub/hub_slide-01-02.jpg?_ex=400x400" alt="スターフォーカス USB-Cハブ 7in1" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">スターフォーカス USB-Cハブ 7in1</p><p class="pcard-for">こんな人に：ゲーム機も外部モニターにつなぎたい人</p><p class="pcard-meta">3,980円（執筆時点） · ★4.5（1,305件） · スマホメモリ専門スターフォーカス</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fstarfocus%2Fsf-7in1%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-c-hub-three-picks-desk-cabling">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B7in1%2BHDMI%2BSD%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/usb-c-hub-three-picks-desk-cabling">Amazonで探す</a></p></div></div>
 
 <h3>ComfyStoreの6in1｜薄型アルミで持ち運び向き</h3>
 <p><strong>特徴</strong>　HDMIの4K出力、USB3.0、PD87W対応、SD/microSDカードリーダーを備える6in1で、薄型軽量のアルミ合金ボディをうたっています。価格は2,680円（執筆時点）と3製品の中では控えめで、レビューは4.5（1,014件）。商品ページではドッキングステーション（複数の端子を1台にまとめる機器）として紹介されています。</p>
 <p><strong>向いている人</strong>　口数より携帯性を優先したい方、カバンに入れて現場や客先へ持ち出す方に向く構成です。ノートPC1台と外部モニター、カードの読み込みが中心なら、6つの口でも用途は足りやすいでしょう。</p>
 <p><strong>注意点</strong>　表記上は7in1の2製品より使える口が1つ少なくなります。PDは87Wの記載で、100W記載のモデルと比べると余裕は小さめです。周辺機器を多くつなぐ予定がある方は、先に必要な口数を書き出しておくと選びやすくなります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomfystore%2Fco-usb-1%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/comfystore/cabinet/07370190/07782411/01.jpg?_ex=400x400" alt="★楽天1位★【6in1】 USB Type-C ハブ HDMI 4K USB3.0 PD87w対応 SD/microSDカードリーダー ドッキングステーション 薄型 軽量アルミ合金 USB変換アダプター MacBook ノートパソコン ノートPC surface iPhone15/15Pro iPad Air5/4 Pro2018/2020/2021/2022 Android対応" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">★楽天1位★【6in1】 USB Type-C ハブ HDMI 4K USB3.0 PD87w対応 SD/microSDカードリーダー ドッキングステーション 薄型 軽量アルミ合金 USB変換アダプター MacBook ノートパソコン ノートPC surface iPhone15/15Pro iPad Air5/4 Pro2018/2020/2021/2022 Android対応</p><p class="pcard-meta">2,680円（執筆時点） · ★4.5（1,015件） · ComfyStore</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomfystore%2Fco-usb-1%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B6in1%2B%25E8%2596%2584%25E5%259E%258B%2B%25E3%2582%25A2%25E3%2583%25AB%25E3%2583%259F" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomfystore%2Fco-usb-1%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-c-hub-three-picks-desk-cabling"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/comfystore/cabinet/07370190/07782411/01.jpg?_ex=400x400" alt="ComfyStore USB-Cハブ 6in1" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">ComfyStore USB-Cハブ 6in1</p><p class="pcard-for">こんな人に：カバンに入れて現場や客先へ持ち出す人</p><p class="pcard-meta">2,680円（執筆時点） · ★4.5（1,016件） · ComfyStore</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomfystore%2Fco-usb-1%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/usb-c-hub-three-picks-desk-cabling">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUSB-C%2B%25E3%2583%258F%25E3%2583%2596%2B6in1%2B%25E8%2596%2584%25E5%259E%258B%2B%25E3%2582%25A2%25E3%2583%25AB%25E3%2583%259F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/usb-c-hub-three-picks-desk-cabling">Amazonで探す</a></p></div></div>
 
 <h2>比較表</h2>
-<table>
+<div class="tbl"><table>
 <thead>
 <tr>
 <th>項目</th>
 <th>QGeem 7in1</th>
 <th>スターフォーカス 7in1</th>
 <th>ComfyStore 6in1</th>
+<th>購入</th>
 </tr>
 </thead>
 <tbody>
@@ -171,39 +202,45 @@
 <td>2,980円</td>
 <td>3,980円</td>
 <td>2,680円</td>
+<td></td>
 </tr>
 <tr>
 <td>レビュー</td>
 <td>4.54（2,043件）</td>
 <td>4.46（1,304件）</td>
 <td>4.5（1,014件）</td>
+<td></td>
 </tr>
 <tr>
 <td>PD給電</td>
 <td>100W記載</td>
 <td>「急速充電」記載</td>
 <td>87W記載</td>
+<td></td>
 </tr>
 <tr>
 <td>カードリーダー</td>
 <td>SD / microSD</td>
 <td>SD（microSDは記載なし）</td>
 <td>SD / microSD</td>
+<td></td>
 </tr>
 <tr>
 <td>筐体の特徴</td>
 <td>記載なし</td>
 <td>記載なし</td>
 <td>薄型・軽量アルミ合金</td>
+<td></td>
 </tr>
 <tr>
 <td>向く使い方</td>
 <td>据え置きで給電重視</td>
 <td>ゲーム機も含め使い回す</td>
 <td>持ち運び中心</td>
+<td></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>※4K出力は3製品ともHz数の記載がありません。価格・評価は執筆時点（2026年9月）のもので変動します。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/7_2.png" alt="" loading="lazy"></figure>
 

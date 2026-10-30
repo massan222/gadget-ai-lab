@@ -10,7 +10,7 @@
 <meta property="og:description" content="スマートホームを始めたい賃貸住まいの方へ。SwitchBotで最初に選びやすい4製品を、買う順番・選び方の要点・注意点まで整理しました。価格と評価は執筆時点の情報です。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/switchbot-smart-home-starter-4/">
 <meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/6.png">
 <link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/switchbot-smart-home-starter-4/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "スマートホーム入門｜SwitchBotで最初に買う4つ", "datePublished": "2026-09-17T19:04:59", "dateModified": "2026-10-19T21:51:15", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/6.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/switchbot-smart-home-starter-4/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "スマートホーム入門｜SwitchBotで最初に買う4つ", "datePublished": "2026-09-17T19:04:59", "dateModified": "2026-10-31T08:12:26", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/6.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/switchbot-smart-home-starter-4/"}</script>
 
 <link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,9 +92,35 @@
   .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
   .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
   .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
-  article .pcard a.pcard-btn { display:inline-block; padding:8px 14px; border-radius:999px; color:#fff; text-decoration:none; font-size:14px; font-weight:700; margin:0; }
-  article .pcard a.pcard-btn.rakuten { background:#bf0000; }
-  article .pcard a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  article a.pcard-btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 18px;
+    border-radius:999px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; margin:0; box-sizing:border-box; white-space:nowrap; }
+  article a.pcard-btn.rakuten { background:#bf0000; }
+  article a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .pcard-for { font-size:13px; color:var(--sub); margin:0 0 6px; }
+  /* 記事冒頭の「先に結論」（2026-10-31） */
+  .buybox { background:#fff8ec; border:2px solid #f0d9b5; border-radius:16px; padding:14px 16px; margin:18px 0 26px; }
+  .buybox-h { margin:0 0 8px; font-weight:700; color:var(--acc-dark); font-size:14px; }
+  .buybox-main { display:flex; gap:14px; align-items:center; }
+  article .buybox a.buybox-img { flex:0 0 120px; display:block; background:none; padding:0; margin:0; }
+  .buybox-img img { width:120px; height:120px; object-fit:contain; border-radius:10px; background:#fff; display:block; }
+  .buybox-body { flex:1; min-width:0; }
+  .buybox-lead { margin:0; font-size:13px; color:var(--sub); }
+  .buybox-name { margin:2px 0 4px; font-weight:700; font-size:18px; line-height:1.4; }
+  .buybox-why { margin:0 0 10px; font-size:14px; }
+  .buybox-alts { list-style:none; margin:12px 0 0; padding:10px 0 0; border-top:1px dashed #e6cfa8; }
+  .buybox-alts li { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:14px; }
+  .buybox-label { color:var(--sub); white-space:nowrap; }
+  .buybox-alts b { flex:1; min-width:0; }
+  article a.tbtn { display:inline-flex; align-items:center; min-height:36px; padding:4px 14px; border-radius:999px; background:#bf0000;
+    color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
+  /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
+  .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; }
+  .tbl th, .tbl td { min-width:7em; vertical-align:top; }
+  .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
+  .tbl tr > th:first-child { background:#f7eedf; }
+  .tbl tr.pick td, .tbl tr.pick > :first-child { background:#fff4e0; }
+  .badge { display:inline-block; background:var(--acc); color:#fff; font-size:11px; font-weight:700; border-radius:6px; padding:1px 6px; margin:0 4px 2px 0; }
   .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
 
   footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
@@ -102,7 +128,9 @@
 
   @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
   @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
-    .pcard-img img { width:100%; height:200px; } }
+    .pcard-img img { width:100%; height:200px; }
+    .pcard-btns a.pcard-btn { flex:1; padding:8px 10px; font-size:14px; }
+    .buybox-main { flex-direction:column; align-items:stretch; } article .buybox a.buybox-img { flex:none; align-self:center; } }
   @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
 </style>
 </head>
@@ -118,9 +146,11 @@
 <div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/gadget/">ガジェット・スマートホーム</a><span>›</span>この記事</div>
 <article>
   <h1>スマートホーム入門｜SwitchBotで最初に買う4つ</h1>
-  <div class="meta">公開 2026-09-17 · 更新 2026-10-19 · ガジェット・スマートホーム</div>
+  <div class="meta">公開 2026-09-17 · 更新 2026-10-31 · ガジェット・スマートホーム</div>
   <p><img src="https://massan222.github.io/gadget-ai-lab/images/6.png" alt="スマートホーム入門｜SwitchBotで最初に買う4つ"></p>
   <p>※本記事はアフィリエイト広告を含みます</p>
+<div class="buybox"><p class="buybox-h">先に結論</p><div class="buybox-main"><a class="buybox-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/switchbot-smart-home-starter-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09563522/imgrc0078660079.jpg?_ex=400x400" alt="SwitchBot ハブ2" width="120" height="120" loading="lazy"></a><div class="buybox-body"><p class="buybox-lead">迷ったらこれ</p><p class="buybox-name">SwitchBot ハブ2</p><p class="buybox-why">賃貸の土台になり赤外線家電をまとめられる</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/switchbot-smart-home-starter-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%258F%25E3%2583%25962" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/amazon/switchbot-smart-home-starter-4">Amazonで探す</a></p></div></div><ul class="buybox-alts"><li><span class="buybox-label">朝の支度を自動化するなら</span><b>SwitchBot カーテン3</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000109%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/switchbot-smart-home-starter-4">楽天</a></li><li><span class="buybox-label">部屋の空気を把握するなら</span><b>SwitchBot CO2センサー</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/switchbot-smart-home-starter-4">楽天</a></li></ul></div>
+
 <h2>最初の1台で迷うなら、買う順番から決める</h2>
 <p>スマートホームに興味はあるけれど、最初に何を買えばいいか分からない。そこで止まってしまう方は少なくないのではないでしょうか。私は電気通信工事の施工管理をしていて、自宅では SwitchBot のハブとプラグ、温湿度計を運用しています。この記事では、賃貸住まいの方が検討しやすい SwitchBot の4製品を、買う順番も含めて整理します。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/6_1.png" alt="" loading="lazy"></figure>
@@ -138,31 +168,31 @@
 <p>私は自宅でハブを使って赤外線リモコンをまとめており、Stream Deck の自作プラグインからも操作しています。リモコンを探す時間がなくなるのは、地味ですが効いている変化です。ただしこれはハブ全般の使い方の話で、ハブ2に固有の内蔵センサーや画面については、仕様とレビューの範囲でご判断ください。</p>
 <p><strong>向いている人</strong>：エアコンや照明を外出先から操作したい方、賃貸で配線に手を入れられない方に向いています。室温や湿度も1台で確認したい場合は、温湿度計を別に用意しなくて済む構成にできます。</p>
 <p><strong>注意点</strong>：赤外線は光と同じように直進するため、設置場所から家電までの間に遮るものがあると届きにくくなります。操作できるのはリモコンで動く家電に限られ、物理スイッチしかない機器は対象外です。買う前に、操作したい家電のリモコンが赤外線式かどうかを確認しておくとよいです。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09563522/imgrc0078660079.jpg?_ex=400x400" alt="SwitchBot スマートリモコン 赤外線で家電管理 スマートホーム アレクサ 温湿度計機能付き 光センサー付き Wi-Fi 簡単設定 スケジュール シーンで家電一括操作 遠隔操作 ハブ2 スイッチボット" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot スマートリモコン 赤外線で家電管理 スマートホーム アレクサ 温湿度計機能付き 光センサー付き Wi-Fi 簡単設定 スケジュール シーンで家電一括操作 遠隔操作 ハブ2 スイッチボット</p><p class="pcard-meta">9,980円（執筆時点） · ★4.6（1,982件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%258F%25E3%2583%25962" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-smart-home-starter-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09563522/imgrc0078660079.jpg?_ex=400x400" alt="SwitchBot ハブ2" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot ハブ2</p><p class="pcard-for">こんな人に：エアコンや照明を外出先から操作したい人</p><p class="pcard-meta">9,980円（執筆時点） · ★4.6（1,985件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-smart-home-starter-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%258F%25E3%2583%25962" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/switchbot-smart-home-starter-4">Amazonで探す</a></p></div></div>
 
 <h2>2. 2台目に選びやすい：SwitchBot プラグミニ</h2>
 <p>コンセントと家電の間に挟んで、電源のオンオフをスマホやスケジュールから操作できるようにする機器です。商品情報では、Bluetooth と Wi-Fi の両対応、タイマー、消費電力の統計表示に対応しています。Alexa・Google Home・IFTTT・Siri への対応も挙げられています。執筆時点の価格は1,980円、評価は4.34（424件）です。</p>
 <p>私は自宅でプラグを間接照明と加湿器に使っていて、時間になると自動で切れるようにしています。金額のハードルが低いので、スマートホームの感触をつかむ2台目としても選びやすい製品です。消費電力の統計など型番固有の機能については、仕様上の説明として捉えてください。</p>
 <p><strong>向いている人</strong>：コンセントに挿すだけで動く家電を自動化したい方に向いています。賃貸でも設置は差し替えるだけで、退去時はそのまま外して持っていけます。</p>
 <p><strong>注意点</strong>：電源が入った瞬間に動き出す家電が対象で、リモコン待機が必要な家電には向きません。接続する家電の消費電力が製品の定格内かどうかは、事前に確認が必要です。遠隔操作を使う場合は、仕様上 Wi-Fi 環境が前提になります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000043%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09563522/plugmini.jpg?_ex=400x400" alt="SwitchBot プラグミニ スマートプラグ Alexa タイマー付き - コンセント Bluetooth&amp;Wi-Fi スイッチボット タイマー 遠隔操作 消費電力統計 スマートホーム Alexa Google Home IFTTT Siriに対応" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot プラグミニ スマートプラグ Alexa タイマー付き - コンセント Bluetooth&amp;Wi-Fi スイッチボット タイマー 遠隔操作 消費電力統計 スマートホーム Alexa Google Home IFTTT Siriに対応</p><p class="pcard-meta">1,980円（執筆時点） · ★4.3（439件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000043%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B0%25E3%2583%259F%25E3%2583%258B" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000043%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-smart-home-starter-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09377825/09377899/20261027-114834.jpg?_ex=400x400" alt="SwitchBot プラグミニ" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot プラグミニ</p><p class="pcard-for">こんな人に：挿すだけで動く家電を自動化したい人</p><p class="pcard-meta">1,980円（執筆時点） · ★4.3（440件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000043%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-smart-home-starter-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B0%25E3%2583%259F%25E3%2583%258B" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/switchbot-smart-home-starter-4">Amazonで探す</a></p></div></div>
 
 <h2>3. 朝の習慣を変えたいなら：SwitchBot カーテン3</h2>
 <p>今使っているカーテンレールに後付けして、カーテンの開け閉めを自動化する機器です。商品情報によると、U型・角型・ポールタイプのレールに対応し、16kgまでのカーテンを動かせるとされています。ソーラーパネルで充電できる仕様も挙げられており、執筆時点の価格は8,980円、評価は4.61（637件）です。</p>
 <p>私は使っていないため機能の評価はできませんが、レール自体を交換せずに取り付けられる点は、賃貸との相性という意味で分かりやすい利点だと思います。朝の決まった時間に開く設定にすれば、カーテンを開ける動作そのものを省けます。</p>
 <p><strong>向いている人</strong>：レールを交換できない賃貸にお住まいで、朝の支度を少しでも自動化したい方に向いています。手が離せない時間帯に開閉したい方にも合いそうです。</p>
 <p><strong>注意点</strong>：購入前にレールの形状と、カーテンの重量が16kgの範囲に収まるかを実際に確認してください。取り付け位置によっては、カーテンボックスや窓枠と干渉することがあります。寝室で使う場合は動作音が気になるかどうか、レビューを読んで確認しておくと判断しやすくなります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000109%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/10069132/imgrc0094894705.jpg?_ex=400x400" alt="SwitchBot カーテン カーテン3 自動 開閉 スイッチボット 遠隔操作 取付簡単 ソーラーパネルで充電可能 U型/角型レール　ポールカーテンレールに対応 16Kgまで対応（ホワイト）" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot カーテン カーテン3 自動 開閉 スイッチボット 遠隔操作 取付簡単 ソーラーパネルで充電可能 U型/角型レール　ポールカーテンレールに対応 16Kgまで対応（ホワイト）</p><p class="pcard-meta">8,980円（執筆時点） · ★4.6（637件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000109%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2586%25E3%2583%25B33" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000109%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-smart-home-starter-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/10069132/imgrc0094894705.jpg?_ex=400x400" alt="SwitchBot カーテン3" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot カーテン3</p><p class="pcard-for">こんな人に：レール交換できない賃貸で朝を自動化したい人</p><p class="pcard-meta">8,980円（執筆時点） · ★4.6（637件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000109%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-smart-home-starter-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2586%25E3%2583%25B33" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/switchbot-smart-home-starter-4">Amazonで探す</a></p></div></div>
 
 <h2>4. 部屋の空気を数値で見る：SwitchBot CO2センサー</h2>
 <p>二酸化炭素の濃度と温湿度を測って、大きな画面に表示する据え置き型の機器です。商品情報では、快適指数や天気予報、時計・カレンダーの表示に加えて、アラーム、スマホ連動、アラート通知、グラフ記録に対応しているとされています。執筆時点の価格は7,980円、評価は4.65（691件）です。</p>
 <p>こちらも私は使っていないので、仕様の範囲での紹介になります。窓を閉め切って作業していると、換気のタイミングは感覚では分かりにくいものです。数値としきい値の通知があれば、窓を開ける判断の材料になります。</p>
 <p><strong>向いている人</strong>：在宅ワークや趣味の作業で、同じ部屋に長くこもりがちな方に向いています。温湿度とあわせて記録を残し、後からグラフで振り返りたい方にも合います。</p>
 <p><strong>注意点</strong>：測定値は置き場所の影響を受けるため、人のすぐ近く、エアコンの風が当たる位置、窓際などは避けたほうが読み取りやすくなります。表示される数値は部屋の状態を知る目安であり、体調に関する判断の根拠にはなりません。据え置きで使うので、設置場所の近くに電源が取れるかも確認しておきましょう。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/c02/amazon/imgrc0082574109.jpg?_ex=400x400" alt="SwitchBot CO2センサー CO2モニター 二酸化炭素濃度計 温湿度計 アラーム デジタル 大画面 高精度 CO2測定器 快適指数 天気予報 時計 卓上 カレンダー スマホ連動 アラート通知 グラフ記録 スイッチボット" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot CO2センサー CO2モニター 二酸化炭素濃度計 温湿度計 アラーム デジタル 大画面 高精度 CO2測定器 快適指数 天気予報 時計 卓上 カレンダー スマホ連動 アラート通知 グラフ記録 スイッチボット</p><p class="pcard-meta">7,980円（執筆時点） · ★4.7（699件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2BCO2%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B5%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-smart-home-starter-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/c02/amazon/imgrc0082574109.jpg?_ex=400x400" alt="SwitchBot CO2センサー" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot CO2センサー</p><p class="pcard-for">こんな人に：同じ部屋に長くこもりがちな在宅ワークの人</p><p class="pcard-meta">7,980円（執筆時点） · ★4.7（699件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-smart-home-starter-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2BCO2%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B5%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/switchbot-smart-home-starter-4">Amazonで探す</a></p></div></div>
 
 <h2>4製品の比較（価格・評価は執筆時点）</h2>
-<table>
+<div class="tbl"><table>
 <thead>
 <tr>
 <th>製品</th>
@@ -171,16 +201,18 @@
 <th>評価</th>
 <th>賃貸での設置</th>
 <th>検討の順番</th>
+<th>購入</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>ハブ2</td>
+<tr class="pick">
+<td><span class="badge">おすすめ</span>ハブ2</td>
 <td>赤外線家電をまとめる土台</td>
 <td>9,980円</td>
 <td>4.61（1,975件）</td>
 <td>置く・貼る</td>
 <td>1番目</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/switchbot-smart-home-starter-4">楽天</a></td>
 </tr>
 <tr>
 <td>プラグミニ</td>
@@ -189,6 +221,7 @@
 <td>4.34（424件）</td>
 <td>コンセントに挿す</td>
 <td>2番目</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000043%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/switchbot-smart-home-starter-4">楽天</a></td>
 </tr>
 <tr>
 <td>カーテン3</td>
@@ -197,6 +230,7 @@
 <td>4.61（637件）</td>
 <td>既存レールに後付け</td>
 <td>課題に応じて</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000109%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/switchbot-smart-home-starter-4">楽天</a></td>
 </tr>
 <tr>
 <td>CO2センサー</td>
@@ -205,9 +239,10 @@
 <td>4.65（691件）</td>
 <td>卓上に置く</td>
 <td>課題に応じて</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/switchbot-smart-home-starter-4">楽天</a></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/6_2.png" alt="" loading="lazy"></figure>
 
 <h2>まとめ</h2>

@@ -10,7 +10,7 @@
 <meta property="og:description" content="1,000円前後の温湿度計を数年使ってきた人向けに、買い替えの判断軸を整理しました。据え置き型と、スマホで記録できるSwitchBot系を比較します。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/thermo-hygrometer-upgrade-smartphone/">
 <meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/29.png">
 <link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/thermo-hygrometer-upgrade-smartphone/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "温湿度計の買い替え｜スマホで記録できる型に", "datePublished": "2026-10-28T06:06:47", "dateModified": "2026-10-28T06:06:47", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/29.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/thermo-hygrometer-upgrade-smartphone/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "温湿度計の買い替え｜スマホで記録できる型に", "datePublished": "2026-10-28T06:06:47", "dateModified": "2026-10-31T08:12:26", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/29.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/thermo-hygrometer-upgrade-smartphone/"}</script>
 
 <link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,9 +92,35 @@
   .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
   .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
   .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
-  article .pcard a.pcard-btn { display:inline-block; padding:8px 14px; border-radius:999px; color:#fff; text-decoration:none; font-size:14px; font-weight:700; margin:0; }
-  article .pcard a.pcard-btn.rakuten { background:#bf0000; }
-  article .pcard a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  article a.pcard-btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 18px;
+    border-radius:999px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; margin:0; box-sizing:border-box; white-space:nowrap; }
+  article a.pcard-btn.rakuten { background:#bf0000; }
+  article a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .pcard-for { font-size:13px; color:var(--sub); margin:0 0 6px; }
+  /* 記事冒頭の「先に結論」（2026-10-31） */
+  .buybox { background:#fff8ec; border:2px solid #f0d9b5; border-radius:16px; padding:14px 16px; margin:18px 0 26px; }
+  .buybox-h { margin:0 0 8px; font-weight:700; color:var(--acc-dark); font-size:14px; }
+  .buybox-main { display:flex; gap:14px; align-items:center; }
+  article .buybox a.buybox-img { flex:0 0 120px; display:block; background:none; padding:0; margin:0; }
+  .buybox-img img { width:120px; height:120px; object-fit:contain; border-radius:10px; background:#fff; display:block; }
+  .buybox-body { flex:1; min-width:0; }
+  .buybox-lead { margin:0; font-size:13px; color:var(--sub); }
+  .buybox-name { margin:2px 0 4px; font-weight:700; font-size:18px; line-height:1.4; }
+  .buybox-why { margin:0 0 10px; font-size:14px; }
+  .buybox-alts { list-style:none; margin:12px 0 0; padding:10px 0 0; border-top:1px dashed #e6cfa8; }
+  .buybox-alts li { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:14px; }
+  .buybox-label { color:var(--sub); white-space:nowrap; }
+  .buybox-alts b { flex:1; min-width:0; }
+  article a.tbtn { display:inline-flex; align-items:center; min-height:36px; padding:4px 14px; border-radius:999px; background:#bf0000;
+    color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
+  /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
+  .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; }
+  .tbl th, .tbl td { min-width:7em; vertical-align:top; }
+  .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
+  .tbl tr > th:first-child { background:#f7eedf; }
+  .tbl tr.pick td, .tbl tr.pick > :first-child { background:#fff4e0; }
+  .badge { display:inline-block; background:var(--acc); color:#fff; font-size:11px; font-weight:700; border-radius:6px; padding:1px 6px; margin:0 4px 2px 0; }
   .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
 
   footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
@@ -102,7 +128,9 @@
 
   @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
   @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
-    .pcard-img img { width:100%; height:200px; } }
+    .pcard-img img { width:100%; height:200px; }
+    .pcard-btns a.pcard-btn { flex:1; padding:8px 10px; font-size:14px; }
+    .buybox-main { flex-direction:column; align-items:stretch; } article .buybox a.buybox-img { flex:none; align-self:center; } }
   @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
 </style>
 </head>
@@ -118,9 +146,11 @@
 <div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/gadget/">ガジェット・スマートホーム</a><span>›</span>この記事</div>
 <article>
   <h1>温湿度計の買い替え｜スマホで記録できる型に</h1>
-  <div class="meta">公開 2026-10-28 · 更新 2026-10-28 · ガジェット・スマートホーム</div>
+  <div class="meta">公開 2026-10-28 · 更新 2026-10-31 · ガジェット・スマートホーム</div>
   <p><img src="https://massan222.github.io/gadget-ai-lab/images/29.png" alt="温湿度計の買い替え｜スマホで記録できる型に"></p>
   <p>※本記事はアフィリエイト広告を含みます</p>
+<div class="buybox"><p class="buybox-h">先に結論</p><div class="buybox-main"><a class="buybox-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhatusoku%2F10000030%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/thermo-hygrometer-upgrade-smartphone"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/hatusoku/cabinet/09659445/mini_top2.jpg?_ex=400x400" alt="HATUSOKU デジタル温湿度計" width="120" height="120" loading="lazy"></a><div class="buybox-body"><p class="buybox-lead">迷ったらこれ</p><p class="buybox-name">HATUSOKU デジタル温湿度計</p><p class="buybox-why">台数を増やして部屋ごとの差を見やすい</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhatusoku%2F10000030%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/thermo-hygrometer-upgrade-smartphone">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DHATUSOKU%2B%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%2B%25E6%25B8%25A9%25E6%25B9%25BF%25E5%25BA%25A6%25E8%25A8%2588%2B%25E5%25BF%25AB%25E9%2581%25A9%25E5%25BA%25A6%25E9%25A1%2594%25E8%25A1%25A8%25E7%25A4%25BA" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/amazon/thermo-hygrometer-upgrade-smartphone">Amazonで探す</a></p></div></div><ul class="buybox-alts"><li><span class="buybox-label">換気も見たいなら</span><b>SwitchBot CO2センサー</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/thermo-hygrometer-upgrade-smartphone">楽天</a></li><li><span class="buybox-label">家電操作もまとめるなら</span><b>SwitchBot ハブ3</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fhub3%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/thermo-hygrometer-upgrade-smartphone">楽天</a></li></ul></div>
+
 <p>1,000円前後の温湿度計を数年使っていると、「この数字は合っているのかな」と思う場面が出てきます。部屋ごとの湿度の差や、留守中に室温がどこまで上がったかが気になり始めたら、買い替えを考えるタイミングかもしれません。</p>
 <p>この記事では、今までと同じ据え置き型の温湿度計と、スマホで記録を残せるSwitchBot製品を並べて比べます。価格はいずれも執筆時点の楽天市場の表示です。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/29_1.png" alt="" loading="lazy"></figure>
@@ -139,31 +169,31 @@
 <h3>HATUSOKU デジタル温湿度計</h3>
 <p>手のひらサイズで、スタンド、マグネット、吊り下げに対応しています。温度と湿度に合わせて快適度を顔のアイコンで示す機能があり、数字を読むのが苦手な家族にも伝わりやすいつくりです。単4形電池が付属し、価格は1,000円(執筆時点)です。</p>
 <p>向いているのは、まず台数を増やして部屋ごとの差を見たい人です。注意点は、商品情報にスマホ連動の記載が見当たらないことです。経過の記録は残せないため、気付いたときに自分で見る使い方になります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhatusoku%2F10000030%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/hatusoku/cabinet/09659445/mini_top2.jpg?_ex=400x400" alt="【1000円ポッキリ 送料無料】HATUSOKU デジタル 温湿度計 快適度顔表示付 温度計 湿度計 手のひらサイズ スタンド マグネット 吊り下げ シンプル 卓上 室内 赤ちゃん 室温計 温度湿度計 単4形電池付き 68×77×15mm" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【1000円ポッキリ 送料無料】HATUSOKU デジタル 温湿度計 快適度顔表示付 温度計 湿度計 手のひらサイズ スタンド マグネット 吊り下げ シンプル 卓上 室内 赤ちゃん 室温計 温度湿度計 単4形電池付き 68×77×15mm</p><p class="pcard-meta">1,000円（執筆時点） · ★4.7（975件） · HATUSOKU 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhatusoku%2F10000030%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DHATUSOKU%2B%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%2B%25E6%25B8%25A9%25E6%25B9%25BF%25E5%25BA%25A6%25E8%25A8%2588%2B%25E5%25BF%25AB%25E9%2581%25A9%25E5%25BA%25A6%25E9%25A1%2594%25E8%25A1%25A8%25E7%25A4%25BA" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhatusoku%2F10000030%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/hatusoku/cabinet/09659445/mini_top2.jpg?_ex=400x400" alt="HATUSOKU デジタル温湿度計" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">HATUSOKU デジタル温湿度計</p><p class="pcard-for">こんな人に：台数を増やして部屋ごとの差を見たい人</p><p class="pcard-meta">1,000円（執筆時点） · ★4.7（977件） · HATUSOKU 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhatusoku%2F10000030%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DHATUSOKU%2B%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%2B%25E6%25B8%25A9%25E6%25B9%25BF%25E5%25BA%25A6%25E8%25A8%2588%2B%25E5%25BF%25AB%25E9%2581%25A9%25E5%25BA%25A6%25E9%25A1%2594%25E8%25A1%25A8%25E7%25A4%25BA" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/thermo-hygrometer-upgrade-smartphone">Amazonで探す</a></p></div></div>
 
 <h3>mitas デジタル温湿度計(意匠登録済モデル)</h3>
 <p>商品名には、赤ちゃんのいる部屋や寝室、キッチンでの使用が挙がっています。時計機能や光る表示があり、置きスタンド、マグネット、フック穴にも対応する仕様です。価格は1,820円(執筆時点)で、レビューは8,900件を超えています。</p>
 <p>向いているのは、寝室に置いて夜間に表示を確認したい人です。注意点は、こちらもスマホ連動の記載がないことです。レビュー件数は多いものの、精度は製品ごとに差が出るため、複数台を並べて数字を見比べると安心につながります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Foobikiyaking%2F4560213666692e%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/oobikiyaking/cabinet/ir13/1738_01_r_s.jpg?_ex=400x400" alt="【レビュー8,900件】意匠登録済 デジタル 温湿度計 赤ちゃん 高精度 温度計 湿度計 室温計 寝室 キッチン 小型 正確 光る 時計機能 温度 測定器 置きスタンド マグネット フック穴付き 壁掛け 乾燥 対策 予防 熱中症対策 新生活 出産祝い プレゼント おしゃれ かわいい" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【レビュー8,900件】意匠登録済 デジタル 温湿度計 赤ちゃん 高精度 温度計 湿度計 室温計 寝室 キッチン 小型 正確 光る 時計機能 温度 測定器 置きスタンド マグネット フック穴付き 壁掛け 乾燥 対策 予防 熱中症対策 新生活 出産祝い プレゼント おしゃれ かわいい</p><p class="pcard-meta">1,820円（執筆時点） · ★4.4（8,979件） · mitas公式SHOP レビュー13万件</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Foobikiyaking%2F4560213666692e%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%25E6%25B8%25A9%25E6%25B9%25BF%25E5%25BA%25A6%25E8%25A8%2588%2Bmitas%2B%25E8%25B5%25A4%25E3%2581%25A1%25E3%2582%2583%25E3%2582%2593%2B%25E6%2599%2582%25E8%25A8%2588%25E6%25A9%259F%25E8%2583%25BD" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Foobikiyaking%2F4560213666692e%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/oobikiyaking/cabinet/tool108/20261028_153905/000/4560213666692e_pup.jpg?_ex=400x400" alt="mitas デジタル温湿度計" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">mitas デジタル温湿度計</p><p class="pcard-for">こんな人に：寝室に置いて夜間に表示を確認したい人</p><p class="pcard-meta">1,820円（執筆時点） · ★4.4（8,982件） · mitas公式SHOP レビュー13万件</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Foobikiyaking%2F4560213666692e%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%25E6%25B8%25A9%25E6%25B9%25BF%25E5%25BA%25A6%25E8%25A8%2588%2Bmitas%2B%25E8%25B5%25A4%25E3%2581%25A1%25E3%2582%2583%25E3%2582%2593%2B%25E6%2599%2582%25E8%25A8%2588%25E6%25A9%259F%25E8%2583%25BD" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/thermo-hygrometer-upgrade-smartphone">Amazonで探す</a></p></div></div>
 
 <h3>ノア精密 MAG 温度湿度計(時計付き)</h3>
 <p>温度、湿度、時計を1台にまとめた置き時計タイプです。商品名には、フックによる壁掛けや、高齢者の熱中症対策での使用も挙がっています。価格は1,980円(執筆時点)です。</p>
 <p>向いているのは、リビングの時計を兼ねて場所を取りたくない人です。注意点は、時計と兼用なので、温湿度だけを見たいときに表示が多く感じる可能性があることです。スマホ連動の記載はありません。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Furuza%2Fno196%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/uruza/cabinet/no/no196.jpg?_ex=400x400" alt="デジタル 温度湿度計 MAG ノア精密[温湿度計 デジタル時計 シンプル 見やすい 温度計 湿度計 付き時計 デジタル 高齢者 熱中症 対策 温度湿度計 おしゃれ 置き時計 小型 温度 湿度 計 室温計 フック 壁掛け時計 デジタル温度計] 即納" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">デジタル 温度湿度計 MAG ノア精密[温湿度計 デジタル時計 シンプル 見やすい 温度計 湿度計 付き時計 デジタル 高齢者 熱中症 対策 温度湿度計 おしゃれ 置き時計 小型 温度 湿度 計 室温計 フック 壁掛け時計 デジタル温度計] 即納</p><p class="pcard-meta">1,980円（執筆時点） · ★4.6（969件） · URUZA(ウルザ)</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Furuza%2Fno196%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%258E%25E3%2582%25A2%25E7%25B2%25BE%25E5%25AF%2586%2BMAG%2B%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%2B%25E6%25B8%25A9%25E5%25BA%25A6%25E6%25B9%25BF%25E5%25BA%25A6%25E8%25A8%2588%2B%25E6%2599%2582%25E8%25A8%2588%25E4%25BB%2598%25E3%2581%258D" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Furuza%2Fno196%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/uruza/cabinet/no/no196.jpg?_ex=400x400" alt="ノア精密 MAG 温度湿度計" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">ノア精密 MAG 温度湿度計</p><p class="pcard-for">こんな人に：リビングの時計と兼用して場所を取りたくない人</p><p class="pcard-meta">1,980円（執筆時点） · ★4.6（969件） · URUZA(ウルザ)</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Furuza%2Fno196%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%258E%25E3%2582%25A2%25E7%25B2%25BE%25E5%25AF%2586%2BMAG%2B%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%2B%25E6%25B8%25A9%25E5%25BA%25A6%25E6%25B9%25BF%25E5%25BA%25A6%25E8%25A8%2588%2B%25E6%2599%2582%25E8%25A8%2588%25E4%25BB%2598%25E3%2581%258D" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/thermo-hygrometer-upgrade-smartphone">Amazonで探す</a></p></div></div>
 
 <h2>スマホ連動の候補(記録を残したい人向け)</h2>
 <h3>SwitchBot CO2センサー</h3>
 <p>温湿度に加えて二酸化炭素(CO2)の濃度も測る卓上タイプです。商品ページには、大画面、アラーム、スマホ連動、アラート通知、グラフ記録といった機能が並んでいます。価格は6,780円(執筆時点)で、レビューでの評価は4.66(699件)です。</p>
 <p>向いているのは、換気のタイミングも数字で把握したい人です。注意点は、据え置き型と比べると価格がかなり上がることです。温湿度の記録だけが目的なら、機能が多すぎる可能性があります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/c02/amazon/imgrc0082574109.jpg?_ex=400x400" alt="【秋の大感謝祭セール】SwitchBot CO2センサー CO2モニター 二酸化炭素濃度計 温湿度計 アラーム デジタル 大画面 高精度 CO2測定器 快適指数 天気予報 時計 卓上 カレンダー スマホ連動 アラート通知 グラフ記録 スイッチボット" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【秋の大感謝祭セール】SwitchBot CO2センサー CO2モニター 二酸化炭素濃度計 温湿度計 アラーム デジタル 大画面 高精度 CO2測定器 快適指数 天気予報 時計 卓上 カレンダー スマホ連動 アラート通知 グラフ記録 スイッチボット</p><p class="pcard-meta">6,780円（執筆時点） · ★4.7（699件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2BCO2%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B5%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/c02/amazon/imgrc0082574109.jpg?_ex=400x400" alt="SwitchBot CO2センサー" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot CO2センサー</p><p class="pcard-for">こんな人に：換気のタイミングも数字で把握したい人</p><p class="pcard-meta">7,980円（執筆時点） · ★4.7（699件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2BCO2%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B5%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/thermo-hygrometer-upgrade-smartphone">Amazonで探す</a></p></div></div>
 
 <h3>SwitchBot スマートリモコン ハブ3</h3>
 <p>赤外線のリモコンをまとめて操作できる学習リモコンで、温湿度計の機能と光センサーを内蔵しています。2.4インチのモニターが付き、スマホから家電を遠隔で操作できる仕様です。価格は13,415円(執筆時点)です。</p>
 <p>向いているのは、温湿度の記録と、エアコンなどの操作を1台で済ませたい人です。注意点は価格の高さと、赤外線リモコン扱いの家電は今の状態を読み取れないことです。私がStream DeckからSwitchBotのエアコンを操作したときも、赤外線のため操作は一方通行でした。電源が入っているかは、室温の変化など別の手がかりで確かめることになります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fhub3%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11691620/12373818/imgrc0093270924.jpg?_ex=400x400" alt="【秋の大感謝祭セール】SwitchBot スマートリモコン ハブ3 赤外線で家電管理 アレクサ スマートホーム 2.4インチモニター付き 学習リモコン 温湿度計機能付き 光センサー付き リモートボタン テレビ 照明 家電 スマホ 遠隔操作 スイッチボット" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【秋の大感謝祭セール】SwitchBot スマートリモコン ハブ3 赤外線で家電管理 アレクサ スマートホーム 2.4インチモニター付き 学習リモコン 温湿度計機能付き 光センサー付き リモートボタン テレビ 照明 家電 スマホ 遠隔操作 スイッチボット</p><p class="pcard-meta">13,415円（執筆時点） · ★4.5（971件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fhub3%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AA%25E3%2583%25A2%25E3%2582%25B3%25E3%2583%25B3%2B%25E3%2583%258F%25E3%2583%25963" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fhub3%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/11691620/12373818/imgrc0093270924.jpg?_ex=400x400" alt="SwitchBot ハブ3" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot ハブ3</p><p class="pcard-for">こんな人に：温湿度の記録と家電操作を1台で済ませたい人</p><p class="pcard-meta">16,980円（執筆時点） · ★4.5（971件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fhub3%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/thermo-hygrometer-upgrade-smartphone">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AA%25E3%2583%25A2%25E3%2582%25B3%25E3%2583%25B3%2B%25E3%2583%258F%25E3%2583%25963" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/thermo-hygrometer-upgrade-smartphone">Amazonで探す</a></p></div></div>
 
 <h2>比較表</h2>
-<table>
+<div class="tbl"><table>
 <thead>
 <tr>
 <th>商品</th>
@@ -171,15 +201,17 @@
 <th>スマホ連動</th>
 <th>特徴</th>
 <th>向いている使い方</th>
+<th>購入</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>HATUSOKU 温湿度計</td>
+<tr class="pick">
+<td><span class="badge">おすすめ</span>HATUSOKU 温湿度計</td>
 <td>1,000円</td>
 <td>記載なし</td>
 <td>快適度の顔表示、電池付き</td>
 <td>台数を増やして部屋を比べる</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhatusoku%2F10000030%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/thermo-hygrometer-upgrade-smartphone">楽天</a></td>
 </tr>
 <tr>
 <td>mitas 温湿度計</td>
@@ -187,6 +219,7 @@
 <td>記載なし</td>
 <td>時計機能、光る表示</td>
 <td>寝室での確認</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Foobikiyaking%2F4560213666692e%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/thermo-hygrometer-upgrade-smartphone">楽天</a></td>
 </tr>
 <tr>
 <td>ノア精密 MAG</td>
@@ -194,6 +227,7 @@
 <td>記載なし</td>
 <td>時計付き、壁掛け対応</td>
 <td>リビングの時計と兼用</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Furuza%2Fno196%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/thermo-hygrometer-upgrade-smartphone">楽天</a></td>
 </tr>
 <tr>
 <td>SwitchBot CO2センサー</td>
@@ -201,6 +235,7 @@
 <td>あり(商品ページ記載)</td>
 <td>CO2測定、グラフ記録</td>
 <td>換気と室温の記録</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/thermo-hygrometer-upgrade-smartphone">楽天</a></td>
 </tr>
 <tr>
 <td>SwitchBot ハブ3</td>
@@ -208,9 +243,10 @@
 <td>あり(商品ページ記載)</td>
 <td>学習リモコン、温湿度計機能</td>
 <td>記録と家電操作をまとめる</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fhub3%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/thermo-hygrometer-upgrade-smartphone">楽天</a></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>買い替えの進め方の例</h2>
 <p>いきなり全部を高価な型に替える必要はありません。たとえば、気になる部屋だけにスマホ連動型を置き、他の部屋は据え置き型で台数を増やす方法があります。記録の使い道がはっきりしてから追加すれば、無駄な出費を抑えやすくなります。</p>
 <p>新しい温湿度計を買ったら、古い温湿度計と並べて数日置いてみるのもおすすめです。表示にどのくらい差があるかを知っておくと、これまでの数字の見方も整理できます。</p>

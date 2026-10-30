@@ -10,7 +10,7 @@
 <meta property="og:description" content="外回りや現場作業でスマホの電池切れが心配な人向けに、楽天で人気のモバイルバッテリー4製品を容量・端子・重さの考え方で比べました。初めて買う人も選びやすいようにまとめています。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/mobile-battery-compare-4/">
 <meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/19.png">
 <link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/mobile-battery-compare-4/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "モバイルバッテリー比較｜現場と外出で選ぶ人気4選", "datePublished": "2026-10-12T06:04:51", "dateModified": "2026-10-19T21:44:20", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/19.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/mobile-battery-compare-4/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "モバイルバッテリー比較｜現場と外出で選ぶ人気4選", "datePublished": "2026-10-12T06:04:51", "dateModified": "2026-10-31T08:12:26", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/19.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/mobile-battery-compare-4/"}</script>
 
 <link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,9 +92,35 @@
   .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
   .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
   .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
-  article .pcard a.pcard-btn { display:inline-block; padding:8px 14px; border-radius:999px; color:#fff; text-decoration:none; font-size:14px; font-weight:700; margin:0; }
-  article .pcard a.pcard-btn.rakuten { background:#bf0000; }
-  article .pcard a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  article a.pcard-btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 18px;
+    border-radius:999px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; margin:0; box-sizing:border-box; white-space:nowrap; }
+  article a.pcard-btn.rakuten { background:#bf0000; }
+  article a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .pcard-for { font-size:13px; color:var(--sub); margin:0 0 6px; }
+  /* 記事冒頭の「先に結論」（2026-10-31） */
+  .buybox { background:#fff8ec; border:2px solid #f0d9b5; border-radius:16px; padding:14px 16px; margin:18px 0 26px; }
+  .buybox-h { margin:0 0 8px; font-weight:700; color:var(--acc-dark); font-size:14px; }
+  .buybox-main { display:flex; gap:14px; align-items:center; }
+  article .buybox a.buybox-img { flex:0 0 120px; display:block; background:none; padding:0; margin:0; }
+  .buybox-img img { width:120px; height:120px; object-fit:contain; border-radius:10px; background:#fff; display:block; }
+  .buybox-body { flex:1; min-width:0; }
+  .buybox-lead { margin:0; font-size:13px; color:var(--sub); }
+  .buybox-name { margin:2px 0 4px; font-weight:700; font-size:18px; line-height:1.4; }
+  .buybox-why { margin:0 0 10px; font-size:14px; }
+  .buybox-alts { list-style:none; margin:12px 0 0; padding:10px 0 0; border-top:1px dashed #e6cfa8; }
+  .buybox-alts li { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:14px; }
+  .buybox-label { color:var(--sub); white-space:nowrap; }
+  .buybox-alts b { flex:1; min-width:0; }
+  article a.tbtn { display:inline-flex; align-items:center; min-height:36px; padding:4px 14px; border-radius:999px; background:#bf0000;
+    color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
+  /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
+  .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; }
+  .tbl th, .tbl td { min-width:7em; vertical-align:top; }
+  .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
+  .tbl tr > th:first-child { background:#f7eedf; }
+  .tbl tr.pick td, .tbl tr.pick > :first-child { background:#fff4e0; }
+  .badge { display:inline-block; background:var(--acc); color:#fff; font-size:11px; font-weight:700; border-radius:6px; padding:1px 6px; margin:0 4px 2px 0; }
   .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
 
   footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
@@ -102,7 +128,9 @@
 
   @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
   @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
-    .pcard-img img { width:100%; height:200px; } }
+    .pcard-img img { width:100%; height:200px; }
+    .pcard-btns a.pcard-btn { flex:1; padding:8px 10px; font-size:14px; }
+    .buybox-main { flex-direction:column; align-items:stretch; } article .buybox a.buybox-img { flex:none; align-self:center; } }
   @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
 </style>
 </head>
@@ -118,9 +146,11 @@
 <div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/ai-tools/">AI活用・副業ツール</a><span>›</span>この記事</div>
 <article>
   <h1>モバイルバッテリー比較｜現場と外出で選ぶ人気4選</h1>
-  <div class="meta">公開 2026-10-12 · 更新 2026-10-19 · AI活用・副業ツール</div>
+  <div class="meta">公開 2026-10-12 · 更新 2026-10-31 · AI活用・副業ツール</div>
   <p><img src="https://massan222.github.io/gadget-ai-lab/images/19.png" alt="モバイルバッテリー比較｜現場と外出で選ぶ人気4選"></p>
   <p>※本記事はアフィリエイト広告を含みます</p>
+<div class="buybox"><p class="buybox-h">先に結論</p><div class="buybox-main"><a class="buybox-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgracevally%2Fgrace-xpb%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/mobile-battery-compare-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/gracevally/cabinet/09355687/09895983/imgrc0132050701.gif?_ex=400x400" alt="GraceVally 5000mAh 直挿し" width="120" height="120" loading="lazy"></a><div class="buybox-body"><p class="buybox-lead">迷ったらこれ</p><p class="buybox-name">GraceVally 5000mAh 直挿し</p><p class="buybox-why">ポケットに入れて身軽に持ち歩ける直挿しタイプ</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgracevally%2Fgrace-xpb%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/mobile-battery-compare-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DGraceVally%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B5000mAh%2BMFi%25E8%25AA%258D%25E8%25A8%25BC" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/amazon/mobile-battery-compare-4">Amazonで探す</a></p></div></div><ul class="buybox-alts"><li><span class="buybox-label">1〜2日分の余裕なら</span><b>タブタブ 10000mAh W07</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftabtab%2Fat60950%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/mobile-battery-compare-4">楽天</a></li><li><span class="buybox-label">複数台や備えなら</span><b>夢の森 22800mAh</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyumenomori%2Fp1dx14600%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/mobile-battery-compare-4">楽天</a></li></ul></div>
+
 <h2>現場と外回りの電池切れ対策に、モバイルバッテリーを比べました</h2>
 <p>電気通信工事の施工管理をしているまっさんです。現場と事務所を行き来する毎日なので、iPhone で写真を撮ったり、図面を見たり、電話をしたりしているうちに、夕方には電池が心もとなくなります。私と同じように外での作業が多い人には、モバイルバッテリー（スマホを外で充電できる持ち運び用の電池）がひとつあると安心です。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/19_1.png" alt="" loading="lazy"></figure>
@@ -140,7 +170,7 @@
 <li><strong>向いている人</strong>: ポケットや作業着に入れて、とにかく身軽に持ち歩きたい人。iPhone の電池が夕方にもう少し欲しい人</li>
 <li><strong>注意点</strong>: 5000mAh なので、充電できる回数は 1 回前後が目安です。直挿しなので、充電中はスマホとバッテリーが一体になり、操作しにくい場面があります</li>
 </ul>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgracevally%2Fgrace-xpb%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/gracevally/cabinet/09355687/09895983/imgrc0132050701.gif?_ex=400x400" alt="【iPhone18シリーズ対応】＼スマホ1位★20%OFF&amp;P2倍→1,236円／モバイルバッテリー iPhone Android 軽量 小型 MFi認証品 LED残量表示 5000mAh Lightning/Type-cコネクター内蔵 PD10.5W急速充電 残量表示 iPhone18/17/16/15/14/13/12/11/8/SE/Pro/iPad全機種対応" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【iPhone18シリーズ対応】＼スマホ1位★20%OFF&amp;P2倍→1,236円／モバイルバッテリー iPhone Android 軽量 小型 MFi認証品 LED残量表示 5000mAh Lightning/Type-cコネクター内蔵 PD10.5W急速充電 残量表示 iPhone18/17/16/15/14/13/12/11/8/SE/Pro/iPad全機種対応</p><p class="pcard-meta">1,580円（執筆時点） · ★4.5（31,541件） · GraceVally 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgracevally%2Fgrace-xpb%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DGraceVally%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B5000mAh%2BMFi%25E8%25AA%258D%25E8%25A8%25BC" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgracevally%2Fgrace-xpb%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-compare-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/gracevally/cabinet/09355687/09895983/imgrc0132050701.gif?_ex=400x400" alt="GraceVally 5000mAh 直挿し" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">GraceVally 5000mAh 直挿し</p><p class="pcard-for">こんな人に：ポケットに入れて身軽に持ち歩きたい人</p><p class="pcard-meta">1,580円（執筆時点） · ★4.5（31,618件） · GraceVally 楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgracevally%2Fgrace-xpb%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-compare-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DGraceVally%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B5000mAh%2BMFi%25E8%25AA%258D%25E8%25A8%25BC" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-compare-4">Amazonで探す</a></p></div></div>
 
 <h3>ケースbyケース 5000/10000mAh（ケーブル内蔵・マット仕上げ）</h3>
 <p>Type-C と Lightning のケーブルを内蔵したタイプで、容量は 5000mAh と 10000mAh から選べます。表面は手触りがさらっとしたマット加工で、PSE 認証品と書かれています。表示価格は執筆時点で 1,690 円からで、選ぶ容量によって価格が変わる場合があります。</p>
@@ -148,7 +178,7 @@
 <li><strong>向いている人</strong>: iPhone と Android の両方を使う家族がいる人。1 日の外出用と、少し長めの外出用で容量を選びたい人</li>
 <li><strong>注意点</strong>: 容量によって重さと価格が変わるため、購入時にどちらを選んだか確認しましょう。内蔵ケーブルは短めなので、使う姿勢によっては取り回しに慣れが必要です</li>
 </ul>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcase-by-case%2F3017%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/case-by-case/cabinet/08655288/09616085/12363017/imgrc0093368206.jpg?_ex=400x400" alt="P倍倍★1位6冠 正規品 モバイルバッテリー 超マット加工 PSE認証【200円offクーポン2個目に使える】大容量 小型 軽量 ミニ iPhone 急速充電 タイプc ケーブル ケーブル内蔵 Android Type-c ライトニング アイフォン アンドロイド 充電器 急速 急速充電器 5000/10000mAh" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">P倍倍★1位6冠 正規品 モバイルバッテリー 超マット加工 PSE認証【200円offクーポン2個目に使える】大容量 小型 軽量 ミニ iPhone 急速充電 タイプc ケーブル ケーブル内蔵 Android Type-c ライトニング アイフォン アンドロイド 充電器 急速 急速充電器 5000/10000mAh</p><p class="pcard-meta">1,690円（執筆時点） · ★4.4（29,850件） · ケースbyケース</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcase-by-case%2F3017%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B9by%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B9%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E5%2586%2585%25E8%2594%25B5" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcase-by-case%2F3017%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-compare-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/case-by-case/cabinet/08655288/09616085/12363017/imgrc0093368206.jpg?_ex=400x400" alt="ケースbyケース 5000/10000mAh" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">ケースbyケース 5000/10000mAh</p><p class="pcard-for">こんな人に：iPhoneとAndroidの家族兼用で容量を選びたい人</p><p class="pcard-meta">1,690円（執筆時点） · ★4.4（29,891件） · ケースbyケース</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcase-by-case%2F3017%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-compare-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B9by%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B9%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E5%2586%2585%25E8%2594%25B5" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-compare-4">Amazonで探す</a></p></div></div>
 
 <h3>タブタブ 10000mAh（ケーブル内蔵・薄型・カラー豊富）</h3>
 <p>10000mAh の薄型ボディに、Type-C と Lightning のケーブルを内蔵したタイプです。LED で残りの量を確認でき、PSE 認証品と書かれています。20 色から選べて名入れにも対応しているため、記念品やノベルティとしても選ばれているようです。価格は執筆時点で 1,980 円で、20000mAh のモデルも用意されています。</p>
@@ -156,7 +186,7 @@
 <li><strong>向いている人</strong>: 1〜2 日分の余裕が欲しい外回りの人。カバンの中で見つけやすい色を選びたい人や、贈り物を探している人</li>
 <li><strong>注意点</strong>: 薄型でも 10000mAh なので、5000mAh クラスよりは重くなります。20000mAh を選ぶと価格と重さが変わるので、注文時に容量を確認しましょう</li>
 </ul>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftabtab%2Fat60950%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/tabtab/cabinet/product/alphalingw07_at60950/imgrc0123697948.jpg?_ex=400x400" alt="大容量 モバイルバッテリー 軽量 小型 ケーブル内蔵 薄型 10000mAh 急速充電 iPhone/Android対応 Type-C Lightning 最短即日発送 名入れ 20000mAh 記念品 PSE認証 オーダー ギフト プレゼント ノベルティ W07" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">大容量 モバイルバッテリー 軽量 小型 ケーブル内蔵 薄型 10000mAh 急速充電 iPhone/Android対応 Type-C Lightning 最短即日発送 名入れ 20000mAh 記念品 PSE認証 オーダー ギフト プレゼント ノベルティ W07</p><p class="pcard-meta">1,980円（執筆時点） · ★4.5（28,284件） · タブタブ&amp;景品太郎</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftabtab%2Fat60950%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B10000mAh%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E5%2586%2585%25E8%2594%25B5%2B%25E8%2596%2584%25E5%259E%258B%2BW07" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftabtab%2Fat60950%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-compare-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/tabtab/cabinet/product/alphalingw07_at60950/imgrc0123697944.jpg?_ex=400x400" alt="タブタブ 10000mAh W07" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">タブタブ 10000mAh W07</p><p class="pcard-for">こんな人に：1〜2日分の余裕が欲しい外回りの人</p><p class="pcard-meta">1,980円（執筆時点） · ★4.5（28,297件） · タブタブ&amp;景品太郎</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftabtab%2Fat60950%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-compare-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B10000mAh%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E5%2586%2585%25E8%2594%25B5%2B%25E8%2596%2584%25E5%259E%258B%2BW07" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-compare-4">Amazonで探す</a></p></div></div>
 
 <h3>夢の森 22800mAh（大容量・5 台同時充電）</h3>
 <p>22800mAh の大容量タイプで、最大 22.5W の急速充電と 5 台の同時充電に対応すると書かれています。急速充電は複数の規格に対応しているのも特徴です。PD 20W のほか、QC 3.0（Android で多く使われる急速充電の規格）、SCP（一部メーカーの急速充電規格）に対応しています。商品ページでは、電気毛布や電熱ベストへの給電、防災用途も紹介されています。価格は執筆時点で 3,990 円で、ページ内のクーポン表示とは差があります。</p>
@@ -164,10 +194,10 @@
 <li><strong>向いている人</strong>: スマホとタブレットなど複数台を充電したい人。車や現場事務所に置いて共用したい人や、停電への備えにしたい人</li>
 <li><strong>注意点</strong>: 容量が大きい分、ほかの 3 製品より重くかさばります。飛行機では預け荷物に入れられず、機内への持ち込みにも条件があるため、事前に航空会社の案内を確認しましょう</li>
 </ul>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyumenomori%2Fp1dx14600%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yumenomori/cabinet/09676799/x146zt_260109.jpg?_ex=400x400" alt="連続2年受賞！【COUPONで1,890円・超お得SALE】 モバイルバッテリー 軽量 小型 22800mAh 累計販売1,000,000個＋ バッテリー 大容量 22.5W 急速充電 5台同時充電 充電器 ケーブル内蔵 携帯充電器 SCP 22.5W/PD 20W/QC 3.0最速 機内持込 防災グッズ 電気毛布 電熱ベスト" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">連続2年受賞！【COUPONで1,890円・超お得SALE】 モバイルバッテリー 軽量 小型 22800mAh 累計販売1,000,000個＋ バッテリー 大容量 22.5W 急速充電 5台同時充電 充電器 ケーブル内蔵 携帯充電器 SCP 22.5W/PD 20W/QC 3.0最速 機内持込 防災グッズ 電気毛布 電熱ベスト</p><p class="pcard-meta">3,990円（執筆時点） · ★4.5（15,351件） · 夢の森</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyumenomori%2Fp1dx14600%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E5%25A4%25A2%25E3%2581%25AE%25E6%25A3%25AE%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B22800mAh" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyumenomori%2Fp1dx14600%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-compare-4"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yumenomori/cabinet/09676799/x146zt_260109.jpg?_ex=400x400" alt="夢の森 22800mAh" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">夢の森 22800mAh</p><p class="pcard-for">こんな人に：複数台充電や共用・停電への備えにしたい人</p><p class="pcard-meta">3,990円（執筆時点） · ★4.5（15,389件） · 夢の森</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyumenomori%2Fp1dx14600%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-compare-4">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E5%25A4%25A2%25E3%2581%25AE%25E6%25A3%25AE%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B22800mAh" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-compare-4">Amazonで探す</a></p></div></div>
 
 <h2>比較表</h2>
-<table>
+<div class="tbl"><table>
 <thead>
 <tr>
 <th>商品</th>
@@ -176,16 +206,18 @@
 <th>出力・急速充電</th>
 <th>価格（執筆時点）</th>
 <th>合う使い方</th>
+<th>購入</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>GraceVally</td>
+<tr class="pick">
+<td><span class="badge">おすすめ</span>GraceVally</td>
 <td>5000mAh</td>
 <td>本体直挿し（Lightning/Type-C）</td>
 <td>PD 10.5W</td>
 <td>1,580 円</td>
 <td>軽さ重視・1 日の保険</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgracevally%2Fgrace-xpb%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-compare-4">楽天</a></td>
 </tr>
 <tr>
 <td>ケースbyケース</td>
@@ -194,6 +226,7 @@
 <td>急速充電対応</td>
 <td>1,690 円〜</td>
 <td>容量を選びたい・家族兼用</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcase-by-case%2F3017%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-compare-4">楽天</a></td>
 </tr>
 <tr>
 <td>タブタブ</td>
@@ -202,6 +235,7 @@
 <td>急速充電対応</td>
 <td>1,980 円</td>
 <td>1〜2 日分・色を選びたい</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftabtab%2Fat60950%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-compare-4">楽天</a></td>
 </tr>
 <tr>
 <td>夢の森</td>
@@ -210,9 +244,10 @@
 <td>最大 22.5W（PD 20W/QC 3.0）</td>
 <td>3,990 円</td>
 <td>複数台・共用・防災</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fyumenomori%2Fp1dx14600%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-compare-4">楽天</a></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>※ 価格・仕様は執筆時点の商品ページの表示です。クーポンやポイントで実際の支払額は変わります。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/19_2.png" alt="" loading="lazy"></figure>
 

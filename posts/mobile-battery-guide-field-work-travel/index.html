@@ -10,7 +10,7 @@
 <meta property="og:description" content="外回りや出張で iPhone の電池切れが心配な人向けに、容量・出力・ケーブル・機内持ち込みの見方を整理しました。用途別に 5 機種を比べます。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/mobile-battery-guide-field-work-travel/">
 <meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/23.png">
 <link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/mobile-battery-guide-field-work-travel/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "モバイルバッテリーの選び方｜現場仕事・出張の用途別5選", "datePublished": "2026-10-19T06:06:35", "dateModified": "2026-10-19T21:42:16", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/23.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/mobile-battery-guide-field-work-travel/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "モバイルバッテリーの選び方｜現場仕事・出張の用途別5選", "datePublished": "2026-10-19T06:06:35", "dateModified": "2026-10-31T08:12:26", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/23.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/mobile-battery-guide-field-work-travel/"}</script>
 
 <link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,9 +92,35 @@
   .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
   .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
   .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
-  article .pcard a.pcard-btn { display:inline-block; padding:8px 14px; border-radius:999px; color:#fff; text-decoration:none; font-size:14px; font-weight:700; margin:0; }
-  article .pcard a.pcard-btn.rakuten { background:#bf0000; }
-  article .pcard a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  article a.pcard-btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 18px;
+    border-radius:999px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; margin:0; box-sizing:border-box; white-space:nowrap; }
+  article a.pcard-btn.rakuten { background:#bf0000; }
+  article a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .pcard-for { font-size:13px; color:var(--sub); margin:0 0 6px; }
+  /* 記事冒頭の「先に結論」（2026-10-31） */
+  .buybox { background:#fff8ec; border:2px solid #f0d9b5; border-radius:16px; padding:14px 16px; margin:18px 0 26px; }
+  .buybox-h { margin:0 0 8px; font-weight:700; color:var(--acc-dark); font-size:14px; }
+  .buybox-main { display:flex; gap:14px; align-items:center; }
+  article .buybox a.buybox-img { flex:0 0 120px; display:block; background:none; padding:0; margin:0; }
+  .buybox-img img { width:120px; height:120px; object-fit:contain; border-radius:10px; background:#fff; display:block; }
+  .buybox-body { flex:1; min-width:0; }
+  .buybox-lead { margin:0; font-size:13px; color:var(--sub); }
+  .buybox-name { margin:2px 0 4px; font-weight:700; font-size:18px; line-height:1.4; }
+  .buybox-why { margin:0 0 10px; font-size:14px; }
+  .buybox-alts { list-style:none; margin:12px 0 0; padding:10px 0 0; border-top:1px dashed #e6cfa8; }
+  .buybox-alts li { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:14px; }
+  .buybox-label { color:var(--sub); white-space:nowrap; }
+  .buybox-alts b { flex:1; min-width:0; }
+  article a.tbtn { display:inline-flex; align-items:center; min-height:36px; padding:4px 14px; border-radius:999px; background:#bf0000;
+    color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
+  /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
+  .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; }
+  .tbl th, .tbl td { min-width:7em; vertical-align:top; }
+  .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
+  .tbl tr > th:first-child { background:#f7eedf; }
+  .tbl tr.pick td, .tbl tr.pick > :first-child { background:#fff4e0; }
+  .badge { display:inline-block; background:var(--acc); color:#fff; font-size:11px; font-weight:700; border-radius:6px; padding:1px 6px; margin:0 4px 2px 0; }
   .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
 
   footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
@@ -102,7 +128,9 @@
 
   @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
   @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
-    .pcard-img img { width:100%; height:200px; } }
+    .pcard-img img { width:100%; height:200px; }
+    .pcard-btns a.pcard-btn { flex:1; padding:8px 10px; font-size:14px; }
+    .buybox-main { flex-direction:column; align-items:stretch; } article .buybox a.buybox-img { flex:none; align-self:center; } }
   @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
 </style>
 </head>
@@ -118,9 +146,11 @@
 <div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/ai-tools/">AI活用・副業ツール</a><span>›</span>この記事</div>
 <article>
   <h1>モバイルバッテリーの選び方｜現場仕事・出張の用途別5選</h1>
-  <div class="meta">公開 2026-10-19 · 更新 2026-10-19 · AI活用・副業ツール</div>
+  <div class="meta">公開 2026-10-19 · 更新 2026-10-31 · AI活用・副業ツール</div>
   <p><img src="https://massan222.github.io/gadget-ai-lab/images/23.png" alt="モバイルバッテリーの選び方｜現場仕事・出張の用途別5選"></p>
   <p>※本記事はアフィリエイト広告を含みます</p>
+<div class="buybox"><p class="buybox-h">先に結論</p><div class="buybox-main"><a class="buybox-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1257%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/mobile-battery-guide-field-work-travel"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1257_normal.jpg?_ex=400x400" alt="Anker Power Bank 10000" width="120" height="120" loading="lazy"></a><div class="buybox-body"><p class="buybox-lead">迷ったらこれ</p><p class="buybox-name">Anker Power Bank 10000</p><p class="buybox-why">日帰りの外回り向け。容量と充電の速さのバランス型</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1257%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/mobile-battery-guide-field-work-travel">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DAnker%2BPower%2BBank%2B10000mAh%2B22.5W" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/amazon/mobile-battery-guide-field-work-travel">Amazonで探す</a></p></div></div><ul class="buybox-alts"><li><span class="buybox-label">身軽さ重視なら</span><b>Anker Nano Power Bank</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1645%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/mobile-battery-guide-field-work-travel">楽天</a></li><li><span class="buybox-label">長い出張・防災なら</span><b>大容量23600mAh ケーブル内蔵</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurumiyashop%2Fcdb00p60%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/mobile-battery-guide-field-work-travel">楽天</a></li></ul></div>
+
 <h2>外回りや出張が多い人ほど、モバイルバッテリー選びで迷います</h2>
 <p>現場と事務所を行き来していると、iPhone で写真を撮り、地図を見て、電話やチャットで連絡を取ります。夕方になると電池残量が気になってくる、という方は多いと思います。私も施工管理の仕事で毎日 iPhone を持ち歩いています。ただ、モバイルバッテリーは種類が多く、どれを買えばよいか分かりにくい製品です。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/23_1.png" alt="" loading="lazy"></figure>
@@ -140,34 +170,34 @@
 <p><strong>特徴</strong>：容量 10000mAh、最大 22.5W 出力で、USB PD に対応しています。残量が数字で分かるディスプレイが付いていて、USB-C &amp; USB-C ケーブルも付属しています。価格は執筆時点で 3,490 円、楽天のレビューは 4.53（2,274 件）です。</p>
 <p><strong>向いている人</strong>：日帰りの外回りが中心で、容量と充電の速さのバランスを重視する人です。残量が数字で見えるので、充電し忘れを防ぎやすくなります。</p>
 <p><strong>注意点</strong>：USB-C のケーブルが付属するため、Lightning 端子の iPhone を使う場合は別にケーブルが必要です。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1257%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1257_normal.jpg?_ex=400x400" alt="Anker Power Bank (10000mAh, 22.5W) (モバイルバッテリー 10000mAh 最大22.5W出力 USB-C &amp; USB-C ケーブル付属 ディスプレイ搭載) 【USB PD/PowerIQ搭載/PSE技術基準適合】iPhone 15 Android iPad その他各種機器対応" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">Anker Power Bank (10000mAh, 22.5W) (モバイルバッテリー 10000mAh 最大22.5W出力 USB-C &amp; USB-C ケーブル付属 ディスプレイ搭載) 【USB PD/PowerIQ搭載/PSE技術基準適合】iPhone 15 Android iPad その他各種機器対応</p><p class="pcard-meta">3,490円（執筆時点） · ★4.5（2,274件） · アンカー・ダイレクト楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1257%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DAnker%2BPower%2BBank%2B10000mAh%2B22.5W" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1257%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1257_normal.jpg?_ex=400x400" alt="Anker Power Bank 10000" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">Anker Power Bank 10000</p><p class="pcard-for">こんな人に：日帰りの外回り中心で、容量と速さのバランス重視の人</p><p class="pcard-meta">3,490円（執筆時点） · ★4.5（2,288件） · アンカー・ダイレクト楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1257%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DAnker%2BPower%2BBank%2B10000mAh%2B22.5W" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-guide-field-work-travel">Amazonで探す</a></p></div></div>
 
 <h3>価格を抑えて2台同時に充電したい人に：UGREEN モバイルバッテリー 10000mAh</h3>
 <p><strong>特徴</strong>：容量 10000mAh、PD20W の急速充電に対応し、2 台同時に充電できます。ワイヤレスイヤホンなど電気をあまり使わない機器向けの「小電流モード」と、残量表示を備えています。価格は執筆時点で 2,880 円、レビューは 4.68（2,046 件）です。</p>
 <p><strong>向いている人</strong>：iPhone とイヤホン、スマートウォッチなどを一緒に充電したい人です。なるべく費用を抑えて 10000mAh クラスをそろえたい人にも向いています。</p>
 <p><strong>注意点</strong>：最大出力は 20W です。2 台同時に充電すると、1 台あたりの充電速度は落ちるのが一般的です。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F25185%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ugreen-gear/cabinet/13868535/75131.jpg?_ex=400x400" alt="UGREEN モバイルバッテリー 軽量 小型 10000mah 大容量 2台同時充電 タイプc 機内持ち込み可 PD20W 急速充電 小電流モード バッテリー残量表示 パワーバンク コンパクト PSE iphone18 17 Android USB-C対応 携帯用充電器 ホワイト グレー" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">UGREEN モバイルバッテリー 軽量 小型 10000mah 大容量 2台同時充電 タイプc 機内持ち込み可 PD20W 急速充電 小電流モード バッテリー残量表示 パワーバンク コンパクト PSE iphone18 17 Android USB-C対応 携帯用充電器 ホワイト グレー</p><p class="pcard-meta">2,880円（執筆時点） · ★4.7（2,046件） · UGREEN公式楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F25185%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUGREEN%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B10000mAh%2B20W" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F25185%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ugreen-gear/cabinet/13868535/75131.jpg?_ex=400x400" alt="UGREEN 10000mAh PD20W" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">UGREEN 10000mAh PD20W</p><p class="pcard-for">こんな人に：費用を抑えてiPhoneとイヤホンを同時に充電したい人</p><p class="pcard-meta">2,880円（執筆時点） · ★4.7（2,119件） · UGREEN公式楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F25185%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUGREEN%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B10000mAh%2B20W" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-guide-field-work-travel">Amazonで探す</a></p></div></div>
 
 <h3>とにかく身軽に、ケーブルなしで：Anker Nano Power Bank (5000mAh)</h3>
 <p><strong>特徴</strong>：容量 5000mAh の小型タイプで、端子が本体と一体になっています。Lightning 端子付き（12W）と USB-C 端子付き（22.5W）の 2 種類があります。Lightning 版は MFi 認証（Apple の互換品認証）を受けています。価格は執筆時点で 3,990 円、レビューは 4.46（4,086 件）です。</p>
 <p><strong>向いている人</strong>：作業着のポケットに入れて、iPhone に直接挿して使いたい人です。ケーブルを出し入れする手間を省きたい人にも合います。</p>
 <p><strong>注意点</strong>：容量が小さいので、継ぎ足しの充電向きです。購入時は、iPhone 15 以降なら USB-C 版、14 以前なら Lightning 版と、端子の種類を間違えないようにしてください。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1645%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1645_normal.jpg?_ex=400x400" alt="Anker Nano Power Bank (12W, Built-In Lightning Connector ) / Anker Nano Power Bank (22.5W, Built-In USB-C Connector) (モバイルバッテリー 5000mAh 小型)【MFi認証済/端子一体型】iPhone 17/16/15/14" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">Anker Nano Power Bank (12W, Built-In Lightning Connector ) / Anker Nano Power Bank (22.5W, Built-In USB-C Connector) (モバイルバッテリー 5000mAh 小型)【MFi認証済/端子一体型】iPhone 17/16/15/14</p><p class="pcard-meta">3,990円（執筆時点） · ★4.5（4,086件） · アンカー・ダイレクト楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1645%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DAnker%2BNano%2BPower%2BBank%2B5000mAh" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1645%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1645_normal.jpg?_ex=400x400" alt="Anker Nano Power Bank" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">Anker Nano Power Bank</p><p class="pcard-for">こんな人に：ケーブルなしでiPhoneに直接挿したい人</p><p class="pcard-meta">3,990円（執筆時点） · ★4.5（4,109件） · アンカー・ダイレクト楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1645%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DAnker%2BNano%2BPower%2BBank%2B5000mAh" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-guide-field-work-travel">Amazonで探す</a></p></div></div>
 
 <h3>長い出張と防災の備えに：大容量 23600mAh ケーブル内蔵モデル（古宮shop）</h3>
 <p><strong>特徴</strong>：容量 23600mAh、PD22.5W 出力で、USB-C の入出力に対応しています。ケーブルが 4 本内蔵されていて、Lightning 端子の機器にも挿せます。残量表示と LED ライトも付いています。価格は執筆時点で 2,980 円、レビューは 4.51（6,628 件）です。</p>
 <p><strong>向いている人</strong>：数日の出張で何度も充電したい人や、ケーブルをよく忘れる人です。LED ライトが付いているので、停電への備えとして家に置いておく使い方もできます。</p>
 <p><strong>注意点</strong>：容量が大きい分、10000mAh クラスより重くかさばると考えておきましょう。内蔵ケーブルは曲げ伸ばしで傷みやすい部分なので、保証の内容もあわせて確認しておくと安心です。飛行機に乗るときは、本体に表示された Wh の数値を確かめてください。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurumiyashop%2Fcdb00p60%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/furumiyashop/cabinet/zt/p60-2380.jpg?_ex=400x400" alt="【クーポン利用で最安2380円】楽天1位26冠！モバイルバッテリー 大容量 23600mAh PD22.5W 急速充電 Type-C出入力 4本ケーブル内蔵 軽量 iphone スマホ充電器 携帯充電器 タイプc対応 残量表示 LEDライト 防災グッズ PSE認証済 Lightning iPhone/Android全機種対応" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【クーポン利用で最安2380円】楽天1位26冠！モバイルバッテリー 大容量 23600mAh PD22.5W 急速充電 Type-C出入力 4本ケーブル内蔵 軽量 iphone スマホ充電器 携帯充電器 タイプc対応 残量表示 LEDライト 防災グッズ PSE認証済 Lightning iPhone/Android全機種対応</p><p class="pcard-meta">2,980円（執筆時点） · ★4.5（6,628件） · 古宮shop</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurumiyashop%2Fcdb00p60%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B23600mAh%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E5%2586%2585%25E8%2594%25B5%2BPD22.5W" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurumiyashop%2Fcdb00p60%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/furumiyashop/cabinet/10575868/11134205/p60-2235.jpg?_ex=400x400" alt="大容量23600mAh ケーブル内蔵" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">大容量23600mAh ケーブル内蔵</p><p class="pcard-for">こんな人に：数日の出張や停電への備えに、ケーブルをよく忘れる人</p><p class="pcard-meta">2,980円（執筆時点） · ★4.5（6,796件） · 古宮shop</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurumiyashop%2Fcdb00p60%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B23600mAh%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E5%2586%2585%25E8%2594%25B5%2BPD22.5W" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-guide-field-work-travel">Amazonで探す</a></p></div></div>
 
 <h3>iPad や複数台持ちの人に：KURMIZU モバイルバッテリー 20000mAh</h3>
 <p><strong>特徴</strong>：容量 20000mAh、最大 30W の急速充電に対応し、最大 5 台を同時に充電できます。LED の残量表示が付いていて、販売ページには機内持ち込み可と書かれています。価格は執筆時点で 2,280 円、レビューは 4.54（5,020 件）です。</p>
 <p><strong>向いている人</strong>：iPhone に加えて iPad や仕事用のスマホも持ち歩く人です。出張先で同僚と一緒に充電したい場面にも向いています。</p>
 <p><strong>注意点</strong>：20000mAh クラスなので、毎日持ち歩くには重く感じるかもしれません。5 台を同時に充電するときは出力を分け合うため、1 台ごとの充電は遅くなると考えておきましょう。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurmizu%2Fn4s%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kurmizu/cabinet/11979869/11979873/n4-1784.jpg?_ex=400x400" alt="【半額セール★20%OFFクーポンで1,784円！】モバイルバッテリー モバイルバッテリー 20000mAh モバイルバッテリー軽量 小型 LED残量表示 30W急速充電 最大5台同時充電 iPhone/iPad/Android対応 PSE認証 機内持ち込み可 旅行/出張/アウトドア/キャンプ/停電対策" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【半額セール★20%OFFクーポンで1,784円！】モバイルバッテリー モバイルバッテリー 20000mAh モバイルバッテリー軽量 小型 LED残量表示 30W急速充電 最大5台同時充電 iPhone/iPad/Android対応 PSE認証 機内持ち込み可 旅行/出張/アウトドア/キャンプ/停電対策</p><p class="pcard-meta">2,280円（執筆時点） · ★4.5（5,020件） · KURMIZU</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurmizu%2Fn4s%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DKURMIZU%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B20000mAh" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurmizu%2Fn4s%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kurmizu/cabinet/11979869/11979873/n4-1784.jpg?_ex=400x400" alt="KURMIZU 20000mAh" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">KURMIZU 20000mAh</p><p class="pcard-for">こんな人に：iPadや仕事用スマホも持ち歩く複数台持ちの人</p><p class="pcard-meta">2,280円（執筆時点） · ★4.5（5,076件） · KURMIZU</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurmizu%2Fn4s%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/mobile-battery-guide-field-work-travel">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DKURMIZU%2B%25E3%2583%25A2%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%2B20000mAh" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/mobile-battery-guide-field-work-travel">Amazonで探す</a></p></div></div>
 
 <h2>比較表</h2>
-<table>
+<div class="tbl"><table>
 <thead>
 <tr>
 <th>商品</th>
@@ -176,16 +206,18 @@
 <th>特徴</th>
 <th>向いている用途</th>
 <th>価格（執筆時点）</th>
+<th>購入</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Anker Power Bank 10000mAh</td>
+<tr class="pick">
+<td><span class="badge">おすすめ</span>Anker Power Bank 10000mAh</td>
 <td>10000mAh</td>
 <td>22.5W</td>
 <td>ディスプレイ、C-C ケーブル付属</td>
 <td>毎日の外回り</td>
 <td>3,490円</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1257%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-guide-field-work-travel">楽天</a></td>
 </tr>
 <tr>
 <td>UGREEN 10000mAh</td>
@@ -194,6 +226,7 @@
 <td>2台同時、小電流モード</td>
 <td>価格重視・小物も充電</td>
 <td>2,880円</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F25185%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-guide-field-work-travel">楽天</a></td>
 </tr>
 <tr>
 <td>Anker Nano Power Bank</td>
@@ -202,6 +235,7 @@
 <td>端子一体型</td>
 <td>身軽さ重視</td>
 <td>3,990円</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1645%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-guide-field-work-travel">楽天</a></td>
 </tr>
 <tr>
 <td>大容量 23600mAh（古宮shop）</td>
@@ -210,6 +244,7 @@
 <td>ケーブル4本内蔵、LEDライト</td>
 <td>長期出張・防災</td>
 <td>2,980円</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurumiyashop%2Fcdb00p60%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-guide-field-work-travel">楽天</a></td>
 </tr>
 <tr>
 <td>KURMIZU 20000mAh</td>
@@ -218,9 +253,10 @@
 <td>最大5台同時</td>
 <td>複数台持ち・iPad</td>
 <td>2,280円</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurmizu%2Fn4s%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/mobile-battery-guide-field-work-travel">楽天</a></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/23_2.png" alt="" loading="lazy"></figure>
 
 <h2>まとめ</h2>

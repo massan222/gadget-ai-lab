@@ -10,7 +10,7 @@
 <meta property="og:description" content="ノートPC・スマホ・タブレットの充電をまとめたい人向けに、100W・4ポートのPD充電器と、組み合わせやすいUSB-Cケーブル2種を紹介。ケーブルのW数の落とし穴も解説します。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/pd-charger-and-cables-3-picks/">
 <meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/20.png">
 <link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/pd-charger-and-cables-3-picks/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "充電器が増えすぎた人へ｜PD充電器とケーブル3選", "datePublished": "2026-10-14T06:07:59", "dateModified": "2026-10-19T21:43:47", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/20.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/pd-charger-and-cables-3-picks/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "充電器が増えすぎた人へ｜PD充電器とケーブル3選", "datePublished": "2026-10-14T06:07:59", "dateModified": "2026-10-31T08:12:26", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/20.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/pd-charger-and-cables-3-picks/"}</script>
 
 <link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,9 +92,35 @@
   .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
   .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
   .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
-  article .pcard a.pcard-btn { display:inline-block; padding:8px 14px; border-radius:999px; color:#fff; text-decoration:none; font-size:14px; font-weight:700; margin:0; }
-  article .pcard a.pcard-btn.rakuten { background:#bf0000; }
-  article .pcard a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  article a.pcard-btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 18px;
+    border-radius:999px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; margin:0; box-sizing:border-box; white-space:nowrap; }
+  article a.pcard-btn.rakuten { background:#bf0000; }
+  article a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .pcard-for { font-size:13px; color:var(--sub); margin:0 0 6px; }
+  /* 記事冒頭の「先に結論」（2026-10-31） */
+  .buybox { background:#fff8ec; border:2px solid #f0d9b5; border-radius:16px; padding:14px 16px; margin:18px 0 26px; }
+  .buybox-h { margin:0 0 8px; font-weight:700; color:var(--acc-dark); font-size:14px; }
+  .buybox-main { display:flex; gap:14px; align-items:center; }
+  article .buybox a.buybox-img { flex:0 0 120px; display:block; background:none; padding:0; margin:0; }
+  .buybox-img img { width:120px; height:120px; object-fit:contain; border-radius:10px; background:#fff; display:block; }
+  .buybox-body { flex:1; min-width:0; }
+  .buybox-lead { margin:0; font-size:13px; color:var(--sub); }
+  .buybox-name { margin:2px 0 4px; font-weight:700; font-size:18px; line-height:1.4; }
+  .buybox-why { margin:0 0 10px; font-size:14px; }
+  .buybox-alts { list-style:none; margin:12px 0 0; padding:10px 0 0; border-top:1px dashed #e6cfa8; }
+  .buybox-alts li { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:14px; }
+  .buybox-label { color:var(--sub); white-space:nowrap; }
+  .buybox-alts b { flex:1; min-width:0; }
+  article a.tbtn { display:inline-flex; align-items:center; min-height:36px; padding:4px 14px; border-radius:999px; background:#bf0000;
+    color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
+  /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
+  .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; }
+  .tbl th, .tbl td { min-width:7em; vertical-align:top; }
+  .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
+  .tbl tr > th:first-child { background:#f7eedf; }
+  .tbl tr.pick td, .tbl tr.pick > :first-child { background:#fff4e0; }
+  .badge { display:inline-block; background:var(--acc); color:#fff; font-size:11px; font-weight:700; border-radius:6px; padding:1px 6px; margin:0 4px 2px 0; }
   .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
 
   footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
@@ -102,7 +128,9 @@
 
   @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
   @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
-    .pcard-img img { width:100%; height:200px; } }
+    .pcard-img img { width:100%; height:200px; }
+    .pcard-btns a.pcard-btn { flex:1; padding:8px 10px; font-size:14px; }
+    .buybox-main { flex-direction:column; align-items:stretch; } article .buybox a.buybox-img { flex:none; align-self:center; } }
   @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
 </style>
 </head>
@@ -118,9 +146,11 @@
 <div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/ai-tools/">AI活用・副業ツール</a><span>›</span>この記事</div>
 <article>
   <h1>充電器が増えすぎた人へ｜PD充電器とケーブル3選</h1>
-  <div class="meta">公開 2026-10-14 · 更新 2026-10-19 · AI活用・副業ツール</div>
+  <div class="meta">公開 2026-10-14 · 更新 2026-10-31 · AI活用・副業ツール</div>
   <p><img src="https://massan222.github.io/gadget-ai-lab/images/20.png" alt="充電器が増えすぎた人へ｜PD充電器とケーブル3選"></p>
   <p>※本記事はアフィリエイト広告を含みます</p>
+<div class="buybox"><p class="buybox-h">先に結論</p><div class="buybox-main"><a class="buybox-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F40737%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/pd-charger-and-cables-3-picks"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ugreen-gear/cabinet/13868535/40737.jpg?_ex=400x400" alt="UGREEN PD充電器 100W 4ポート" width="120" height="120" loading="lazy"></a><div class="buybox-body"><p class="buybox-lead">迷ったらこれ</p><p class="buybox-name">UGREEN PD充電器 100W 4ポート</p><p class="buybox-why">4ポートで充電器を1台にまとめやすい</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F40737%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/pd-charger-and-cables-3-picks">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUGREEN%2B100W%2B4%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%2B%25E5%2585%2585%25E9%259B%25BB%25E5%2599%25A8" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/amazon/pd-charger-and-cables-3-picks">Amazonで探す</a></p></div></div><ul class="buybox-alts"><li><span class="buybox-label">手頃なケーブルなら</span><b>OKUTA 充電ケーブル 65W</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesthouse%2Fot-c07%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/pd-charger-and-cables-3-picks">楽天</a></li><li><span class="buybox-label">本数をそろえるなら</span><b>Nimaso USB-Cケーブル 60W</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fniccou-store%2Fyr-ctc2019-2pcs%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/pd-charger-and-cables-3-picks">楽天</a></li></ul></div>
+
 <h2>充電器とケーブル、何本ありますか</h2>
 <p>ノートPC用、スマホ用、タブレット用と、機器を買うたびに充電器が増えていくと、コンセントの周りはすぐにアダプターとケーブルでいっぱいになります。在宅ワークや副業でデスクにいる時間が長くなると、なおさら気になるところです。そこで今回は、複数台をまとめて充電できるPD充電器1台と、組み合わせやすいUSB-Cケーブル2種類を紹介します。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/20_1.png" alt="" loading="lazy"></figure>
@@ -145,7 +175,7 @@
 </ul>
 <h3>注意点</h3>
 <p>100Wは1ポートだけ使ったときの最大値で、4台同時につなぐと各ポートの出力は下がります。消費電力の大きいノートPCを速く充電したい場合は、どのポートに何Wが割り当てられるかを商品ページで確認してください。また、100Wで充電するには、100W対応のケーブルが別に必要です。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F40737%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ugreen-gear/cabinet/13868535/40737.jpg?_ex=400x400" alt="【9/19 お買い物マラソン43%OFFクーポン】UGREEN PD充電器 100W 4ポート GaN急速充電 USB-C充電器 Type-c 4台同時充電（USB-C*3 USB-A*1）MacBook Pro/Air Dell XPS iPad Mini/Pro iPhone18/17/16/15/14 Android GalaxyS10ノートPC/タブレット/携帯電話 PPS typec急速充電器" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【9/19 お買い物マラソン43%OFFクーポン】UGREEN PD充電器 100W 4ポート GaN急速充電 USB-C充電器 Type-c 4台同時充電（USB-C*3 USB-A*1）MacBook Pro/Air Dell XPS iPad Mini/Pro iPhone18/17/16/15/14 Android GalaxyS10ノートPC/タブレット/携帯電話 PPS typec急速充電器</p><p class="pcard-meta">7,999円（執筆時点） · ★4.7（1,116件） · UGREEN公式楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F40737%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUGREEN%2B100W%2B4%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%2B%25E5%2585%2585%25E9%259B%25BB%25E5%2599%25A8" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F40737%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/pd-charger-and-cables-3-picks"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ugreen-gear/cabinet/13868535/40737.jpg?_ex=400x400" alt="UGREEN PD充電器 100W 4ポート" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">UGREEN PD充電器 100W 4ポート</p><p class="pcard-for">こんな人に：ノートPCやスマホの充電器を1台にまとめたい人</p><p class="pcard-meta">7,999円（執筆時点） · ★4.7（1,116件） · UGREEN公式楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F40737%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/pd-charger-and-cables-3-picks">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DUGREEN%2B100W%2B4%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%2B%25E5%2585%2585%25E9%259B%25BB%25E5%2599%25A8" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/pd-charger-and-cables-3-picks">Amazonで探す</a></p></div></div>
 
 <h2>OKUTA USB-C 充電ケーブル（65W）</h2>
 <h3>特徴</h3>
@@ -157,7 +187,7 @@
 </ul>
 <h3>注意点</h3>
 <p>購入時は、端子の組み合わせ（USB-C同士か、Lightningか など）と長さを間違えないように選びましょう。上限は65Wなので、100Wで充電できるノートPCでも、このケーブルでは65Wまでの充電になります。「2本目半額」などのクーポンは時期によって内容が変わります。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesthouse%2Fot-c07%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/besthouse/cabinet/10078867/10282583/imgrc0133063518.jpg?_ex=400x400" alt="楽天1位【2本目半額クーポン】iphone 充電 ケーブル 充電ケーブル usb-c usb type-c ケーブル typecケーブル android 充電コード 急速充電 usb-c type c type-c 充電器 65W Android iPad Pro MacBook Pro/Air ノートPC各種対応 ライトニング ケーブル1m 2m iPhone16 15 14" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">楽天1位【2本目半額クーポン】iphone 充電 ケーブル 充電ケーブル usb-c usb type-c ケーブル typecケーブル android 充電コード 急速充電 usb-c type c type-c 充電器 65W Android iPad Pro MacBook Pro/Air ノートPC各種対応 ライトニング ケーブル1m 2m iPhone16 15 14</p><p class="pcard-meta">1,000円（執筆時点） · ★4.7（2,750件） · OKUTA ダイレクト楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesthouse%2Fot-c07%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DOKUTA%2BUSB-C%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%2B65W" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesthouse%2Fot-c07%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/pd-charger-and-cables-3-picks"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/besthouse/cabinet/10078867/10282583/imgrc0133063518.jpg?_ex=400x400" alt="OKUTA 充電ケーブル 65W" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">OKUTA 充電ケーブル 65W</p><p class="pcard-for">こんな人に：手頃な価格で端子に合ったケーブルを選びたい人</p><p class="pcard-meta">1,000円（執筆時点） · ★4.7（2,750件） · OKUTA ダイレクト楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesthouse%2Fot-c07%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/pd-charger-and-cables-3-picks">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DOKUTA%2BUSB-C%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%2B65W" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/pd-charger-and-cables-3-picks">Amazonで探す</a></p></div></div>
 
 <h2>Nimaso USB-C to USB-C ケーブル（60W）</h2>
 <h3>特徴</h3>
@@ -169,10 +199,10 @@
 </ul>
 <h3>注意点</h3>
 <p>上限は60Wなので、高出力のノートPCを急いで充電する用途には向きません。スマホやタブレット、60W程度で足りるノートPCとの組み合わせが中心になります。セット内容や価格は長さによって変わる場合があるため、選択肢を確認してから購入してください。</p>
-<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fniccou-store%2Fyr-ctc2019-2pcs%2F" rel="sponsored nofollow noopener" target="_blank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/niccou-store/cabinet/07119073/09541964/cc60-stzx-01.jpg?_ex=400x400" alt="【2/3本セット★60W急速充電】Nimaso typec ケーブル USB Type-C ケーブル タイプc usb ケーブル Type-C to Type-Cケーブル usb type-c 急速充電 ケーブル usbケーブル type-c usbケーブル type-c 充電ケーブル usb c ケーブル PD対応 0.3m 1m 2m 3miphone18 Proケーブル" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">【2/3本セット★60W急速充電】Nimaso typec ケーブル USB Type-C ケーブル タイプc usb ケーブル Type-C to Type-Cケーブル usb type-c 急速充電 ケーブル usbケーブル type-c usbケーブル type-c 充電ケーブル usb c ケーブル PD対応 0.3m 1m 2m 3miphone18 Proケーブル</p><p class="pcard-meta">1,599円（執筆時点） · ★4.7（912件） · NimasoDirect楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fniccou-store%2Fyr-ctc2019-2pcs%2F" rel="sponsored nofollow noopener" target="_blank">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DNimaso%2BUSB-C%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%2B60W" rel="sponsored nofollow noopener" target="_blank">Amazonで探す</a></p></div></div>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fniccou-store%2Fyr-ctc2019-2pcs%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/pd-charger-and-cables-3-picks"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/niccou-store/cabinet/07119073/09541964/cc60-stzx-01.jpg?_ex=400x400" alt="Nimaso USB-Cケーブル 60W" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">Nimaso USB-Cケーブル 60W</p><p class="pcard-for">こんな人に：複数の場所にUSB-Cケーブルを置きたい人</p><p class="pcard-meta">1,599円（執筆時点） · ★4.7（912件） · NimasoDirect楽天市場店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fniccou-store%2Fyr-ctc2019-2pcs%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/pd-charger-and-cables-3-picks">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DNimaso%2BUSB-C%2B%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%2B60W" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/pd-charger-and-cables-3-picks">Amazonで探す</a></p></div></div>
 
 <h2>比較表</h2>
-<table>
+<div class="tbl"><table>
 <thead>
 <tr>
 <th>商品</th>
@@ -181,16 +211,18 @@
 <th>ポート・長さ</th>
 <th>価格（執筆時点）</th>
 <th>楽天レビュー</th>
+<th>購入</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>UGREEN PD充電器</td>
+<tr class="pick">
+<td><span class="badge">おすすめ</span>UGREEN PD充電器</td>
 <td>充電器（GaN）</td>
 <td>最大100W</td>
 <td>USB-C×3、USB-A×1</td>
 <td>7,999円</td>
 <td>4.67（1,116件）</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fugreen-gear%2F40737%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/pd-charger-and-cables-3-picks">楽天</a></td>
 </tr>
 <tr>
 <td>OKUTA 充電ケーブル</td>
@@ -199,6 +231,7 @@
 <td>1m / 2m（端子は選択式）</td>
 <td>1,000円</td>
 <td>4.68（2,750件）</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesthouse%2Fot-c07%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/pd-charger-and-cables-3-picks">楽天</a></td>
 </tr>
 <tr>
 <td>Nimaso USB-Cケーブル</td>
@@ -207,9 +240,10 @@
 <td>0.3m / 1m / 2m / 3m</td>
 <td>1,599円</td>
 <td>4.67（912件）</td>
+<td><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fniccou-store%2Fyr-ctc2019-2pcs%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/table/rakuten/pd-charger-and-cables-3-picks">楽天</a></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>組み合わせの考え方</h2>
 <p>充電器を1台にまとめるなら、UGREENの充電器を中心に、スマホやタブレット用には60W・65Wのケーブルを組み合わせる形が考えやすいです。ノートPCを100Wで充電したい場合だけ、100W（5A）対応と書かれたケーブルを別に用意しましょう。逆に、ノートPCの付属充電器が65W以下なら、今回の2本のケーブルでも足りる場合があります。お使いのノートPCが何Wで充電するかは、付属の充電器のラベルで確認できます。</p>
 <figure class="fig"><img src="https://massan222.github.io/gadget-ai-lab/images/20_2.png" alt="" loading="lazy"></figure>
