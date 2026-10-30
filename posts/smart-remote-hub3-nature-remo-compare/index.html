@@ -10,7 +10,7 @@
 <meta property="og:description" content="SwitchBot ハブ3・ハブ2、Nature Remo mini 2、エジソンスマートの4機種を比べました。センサー、本体での操作、価格の違いから、エアコンや照明の操作に合う1台を選べます。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/smart-remote-hub3-nature-remo-compare/">
 <meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/22.png">
 <link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/smart-remote-hub3-nature-remo-compare/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "スマートリモコンおすすめ比較｜SwitchBot ハブ3・ハブ2とNature Remo mini 2ほか4機種", "datePublished": "2026-10-16T06:05:04", "dateModified": "2026-10-31T08:12:26", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/22.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/smart-remote-hub3-nature-remo-compare/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "スマートリモコンおすすめ比較｜SwitchBot ハブ3・ハブ2とNature Remo mini 2ほか4機種", "datePublished": "2026-10-16T06:05:04", "dateModified": "2026-10-31T08:44:31", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/22.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/smart-remote-hub3-nature-remo-compare/"}</script>
 
 <link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,7 +115,11 @@
     color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
   /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
   .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
-  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; }
+  /* border-collapse:collapse だと固定した左列の境界線が横スクロールで流れるので、separate にして線をセルごとに持たせる */
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; border-collapse:separate; border-spacing:0; }
+  article .tbl th, article .tbl td { border-width:0 1px 1px 0; }
+  article .tbl tr > :first-child { border-left-width:1px; }
+  article .tbl thead th { border-top-width:1px; }
   .tbl th, .tbl td { min-width:7em; vertical-align:top; }
   .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
   .tbl tr > th:first-child { background:#f7eedf; }
@@ -197,7 +201,6 @@
 <th>SwitchBot ハブ2</th>
 <th>Nature Remo mini 2</th>
 <th>エジソンスマート</th>
-<th>購入</th>
 </tr>
 </thead>
 <tbody>
@@ -207,7 +210,6 @@
 <td>9,980円</td>
 <td>6,480円</td>
 <td>3,740円</td>
-<td></td>
 </tr>
 <tr>
 <td>評価（執筆時点）</td>
@@ -215,7 +217,6 @@
 <td>4.61（1,981件）</td>
 <td>4.47（1,184件）</td>
 <td>4.34（572件）</td>
-<td></td>
 </tr>
 <tr>
 <td>温度センサー</td>
@@ -223,7 +224,6 @@
 <td>あり</td>
 <td>あり</td>
 <td>あり</td>
-<td></td>
 </tr>
 <tr>
 <td>湿度センサー</td>
@@ -231,7 +231,6 @@
 <td>あり</td>
 <td>なし（仕様上）</td>
 <td>あり</td>
-<td></td>
 </tr>
 <tr>
 <td>光センサー</td>
@@ -239,7 +238,6 @@
 <td>あり</td>
 <td>商品名に記載なし</td>
 <td>商品名に記載なし</td>
-<td></td>
 </tr>
 <tr>
 <td>本体での操作</td>
@@ -247,7 +245,6 @@
 <td>温湿度表示（仕様上）</td>
 <td>なし</td>
 <td>商品名に記載なし</td>
-<td></td>
 </tr>
 <tr>
 <td>向いている人</td>
@@ -255,7 +252,6 @@
 <td>温湿度で自動化したい</td>
 <td>手軽さと位置情報を重視</td>
 <td>まずは安く試したい</td>
-<td></td>
 </tr>
 </tbody>
 </table></div>
