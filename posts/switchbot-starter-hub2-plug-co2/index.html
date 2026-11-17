@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SwitchBot入門 最初に揃えたいハブ2・プラグミニ・CO2センサー | ガジェットとAIの作業部屋</title>
+<meta name="description" content="スマートホーム初心者向けに、SwitchBotで最初に選びたいハブ2・プラグミニ・CO2センサーを紹介します。自宅でSwitchBotを運用している筆者が、選び方と注意点を整理しました。">
+<meta name="p:domain_verify" content="0a6f9db165c1c5d03116e1bca5d7e55e">
+<meta name="google-site-verification" content="BjL0rzudWuBQgLP4SW9acv_Y-AKCizZgnX3PXQ5JxvQ">
+
+<meta property="og:type" content="article"><meta property="og:title" content="SwitchBot入門 最初に揃えたいハブ2・プラグミニ・CO2センサー">
+<meta property="og:description" content="スマートホーム初心者向けに、SwitchBotで最初に選びたいハブ2・プラグミニ・CO2センサーを紹介します。自宅でSwitchBotを運用している筆者が、選び方と注意点を整理しました。"><meta property="og:url" content="https://massan222.github.io/gadget-ai-lab/posts/switchbot-starter-hub2-plug-co2/">
+<meta property="og:image" content="https://massan222.github.io/gadget-ai-lab/images/41.png">
+<link rel="canonical" href="https://massan222.github.io/gadget-ai-lab/posts/switchbot-starter-hub2-plug-co2/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "SwitchBot入門 最初に揃えたいハブ2・プラグミニ・CO2センサー", "datePublished": "2026-11-18T06:07:09", "dateModified": "2026-11-18T06:07:09", "author": {"@type": "Person", "name": "まっさん"}, "image": "https://massan222.github.io/gadget-ai-lab/images/41.png", "url": "https://massan222.github.io/gadget-ai-lab/posts/switchbot-starter-hub2-plug-co2/"}</script>
+
+<link rel="alternate" type="application/rss+xml" title="ガジェットとAIの作業部屋" href="https://massan222.github.io/gadget-ai-lab/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  /* 作業部屋風（2026-10-19）。色はここの変数で決める */
+  :root { --bg:#f3ebdd; --card:#fffaf1; --txt:#3a2a1d; --sub:#8a7562; --line:#e4d6c1; --acc:#c0643b; --acc-dark:#8f4524; --leaf:#6e8b5b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+    font:16px/1.85 "Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Meiryo",sans-serif; }
+  a { color:var(--acc); }
+  .bar { height:10px; background:repeating-linear-gradient(90deg,#a9784f 0 18px,#b98a60 18px 36px,#9c6c45 36px 54px); }
+  header .in { max-width:1080px; margin:0 auto; padding:16px 20px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .logo { display:flex; align-items:center; gap:12px; font-weight:700; font-size:19px; color:var(--txt); text-decoration:none; }
+  .ico { width:42px; height:42px; border-radius:50%; background:var(--acc); color:#fff; display:grid; place-items:center;
+    font-size:20px; box-shadow:0 3px 0 var(--acc-dark); flex:none; }
+  nav { margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; }
+  nav a { padding:5px 14px; border-radius:999px; background:var(--card); border:1px solid var(--line); font-size:13px;
+    color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--acc); border-color:var(--acc); }
+  main { max-width:1080px; margin:0 auto; padding:10px 20px 60px; }
+  .narrow { max-width:820px; margin:0 auto; }
+  .meta { color:var(--sub); font-size:13px; }
+
+  /* パンくずと「トップへ戻る」 */
+  .crumbs { font-size:13px; color:var(--sub); margin:6px 0 14px; }
+  .crumbs a { color:var(--sub); text-decoration:none; } .crumbs a:hover { color:var(--acc); }
+  .crumbs span { margin:0 6px; opacity:.6; }
+  .back { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:34px 0 10px; }
+  .btn { display:inline-block; background:var(--acc); color:#fff; padding:9px 22px; border-radius:999px; font-weight:700;
+    text-decoration:none; box-shadow:0 3px 0 var(--acc-dark); }
+  .btn.sub { background:var(--card); color:var(--txt); border:1px solid var(--line); box-shadow:0 3px 0 var(--line); }
+
+  /* TOP の大きな1本 */
+  .welcome { display:grid; grid-template-columns:1fr 1.1fr; gap:24px; align-items:center; background:var(--card);
+    border:1px solid var(--line); border-radius:22px; padding:22px; box-shadow:0 6px 0 rgba(169,120,79,.18);
+    color:var(--txt); text-decoration:none; }
+  .welcome img { width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:16px; display:block; background:var(--line); }
+  .pin { display:inline-block; background:var(--leaf); color:#fff; font-size:12px; padding:3px 12px; border-radius:999px; }
+  .welcome h2 { font-size:23px; line-height:1.5; margin:10px 0 8px; } .welcome p { color:var(--sub); margin:0 0 14px; }
+  .about { display:flex; gap:14px; align-items:center; margin:26px 0 6px; padding:14px 18px; border:2px dashed var(--line);
+    border-radius:16px; color:var(--sub); font-size:14px; }
+  .about b { color:var(--txt); }
+  h2.sec { font-size:19px; margin:30px 0 14px; } h2.sec::before { content:"🛠"; margin-right:8px; }
+
+  /* 画像付きカードの並び（TOP・カテゴリ・関連記事で共通） */
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .acard { display:block; background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden;
+    color:var(--txt); text-decoration:none; transition:.18s; box-shadow:0 4px 0 rgba(169,120,79,.14); }
+  .acard:hover { transform:translateY(-3px) rotate(-.3deg); box-shadow:0 8px 0 rgba(169,120,79,.2); }
+  .acard .thumb { aspect-ratio:16/9; background:var(--line); }
+  .acard img { width:100%; height:100%; object-fit:cover; display:block; }
+  .acard .body { padding:12px 16px 16px; }
+  .label { font-size:11px; color:var(--acc); font-weight:700; }
+  .acard h3 { font-size:15px; line-height:1.55; margin:4px 0 6px; }
+  .acard .date { font-size:12px; color:var(--sub); margin:0; }
+
+  /* 固定ページ（運営者情報など）の囲み */
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 22px; margin-bottom:16px; }
+
+  /* 記事本文 */
+  article { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px 30px; box-shadow:0 6px 0 rgba(169,120,79,.14); }
+  article h1 { font-size:26px; line-height:1.5; margin:4px 0 8px; }
+  .pr { background:#fff3dc; border:1px solid #f0d29a; border-radius:10px; padding:8px 12px; font-size:14px; margin:0 0 16px; }
+  article h2 { border-left:6px solid var(--acc); background:linear-gradient(90deg,rgba(192,100,59,.08),transparent);
+    padding:6px 12px; border-radius:0 10px 10px 0; margin-top:38px; font-size:21px; }
+  article h3 { margin-top:28px; color:var(--acc-dark); }
+  article img { max-width:100%; height:auto; border-radius:12px; }
+  article table { border-collapse:collapse; width:100%; font-size:14px; display:block; overflow-x:auto; }
+  article th, article td { border:1px solid var(--line); padding:6px 8px; }
+  article th { background:#f7eedf; }
+  article a[rel~="sponsored"] { display:inline-block; background:var(--acc); color:#fff; padding:4px 12px; border-radius:999px;
+    text-decoration:none; font-size:14px; margin:2px 4px 2px 0; }
+  .pcard { display:flex; gap:16px; align-items:center; background:#fff; border:1px solid var(--line); border-radius:16px; padding:14px;
+    margin:18px 0; box-shadow:0 3px 0 rgba(169,120,79,.12); }
+  article .pcard a.pcard-img { flex:0 0 150px; display:block; background:none; padding:0; margin:0; border-radius:10px; }
+  .pcard-img img { width:150px; height:150px; object-fit:contain; border-radius:10px; background:#faf5ec; display:block; }
+  .pcard-body { flex:1; min-width:0; }
+  .pcard-name { font-weight:700; margin:0 0 6px; line-height:1.45; }
+  .pcard-meta { color:var(--sub); font-size:13px; margin:0 0 10px; }
+  .pcard-btns { margin:0; display:flex; gap:8px; flex-wrap:wrap; }
+  article a.pcard-btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 18px;
+    border-radius:999px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; margin:0; box-sizing:border-box; white-space:nowrap; }
+  article a.pcard-btn.rakuten { background:#bf0000; }
+  article a.pcard-btn.amazon { background:#ff9900; color:#111; }
+  .pcard-for { font-size:13px; color:var(--sub); margin:0 0 6px; }
+  /* 記事冒頭の「先に結論」（2026-10-31） */
+  .buybox { background:#fff8ec; border:2px solid #f0d9b5; border-radius:16px; padding:14px 16px; margin:18px 0 26px; }
+  .buybox-h { margin:0 0 8px; font-weight:700; color:var(--acc-dark); font-size:14px; }
+  .buybox-main { display:flex; gap:14px; align-items:center; }
+  article .buybox a.buybox-img { flex:0 0 120px; display:block; background:none; padding:0; margin:0; }
+  .buybox-img img { width:120px; height:120px; object-fit:contain; border-radius:10px; background:#fff; display:block; }
+  .buybox-body { flex:1; min-width:0; }
+  .buybox-lead { margin:0; font-size:13px; color:var(--sub); }
+  .buybox-name { margin:2px 0 4px; font-weight:700; font-size:18px; line-height:1.4; }
+  .buybox-why { margin:0 0 10px; font-size:14px; }
+  .buybox-alts { list-style:none; margin:12px 0 0; padding:10px 0 0; border-top:1px dashed #e6cfa8; }
+  .buybox-alts li { display:flex; align-items:center; gap:8px; margin:6px 0; font-size:14px; }
+  .buybox-label { color:var(--sub); white-space:nowrap; }
+  .buybox-alts b { flex:1; min-width:0; }
+  article a.tbtn { display:inline-flex; align-items:center; min-height:36px; padding:4px 14px; border-radius:999px; background:#bf0000;
+    color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin:0; white-space:nowrap; }
+  /* 比較表: スマホでは横スクロール。左端の列は固定、結論の商品の行に色 */
+  .tbl { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0; }
+  /* border-collapse:collapse だと固定した左列の境界線が横スクロールで流れるので、separate にして線をセルごとに持たせる */
+  article .tbl table { display:table; width:auto; min-width:100%; overflow:visible; border-collapse:separate; border-spacing:0; }
+  article .tbl th, article .tbl td { border-width:0 1px 1px 0; }
+  article .tbl tr > :first-child { border-left-width:1px; }
+  article .tbl thead th { border-top-width:1px; }
+  .tbl th, .tbl td { min-width:7em; vertical-align:top; }
+  .tbl tr > :first-child { position:sticky; left:0; background:#fff; z-index:1; }
+  .tbl tr > th:first-child { background:#f7eedf; }
+  .tbl tr.pick td, .tbl tr.pick > :first-child { background:#fff4e0; }
+  .badge { display:inline-block; background:var(--acc); color:#fff; font-size:11px; font-weight:700; border-radius:6px; padding:1px 6px; margin:0 4px 2px 0; }
+  .fig { margin:24px 0; } .fig img { width:100%; height:auto; border-radius:14px; display:block; box-shadow:0 4px 14px rgba(0,0,0,.08); }
+  .fig.photo img { max-height:640px; width:auto; max-width:100%; margin:0 auto; } .fig figcaption { margin-top:8px; font-size:13px; color:#7a6a58; text-align:center; }
+
+  footer { text-align:center; color:var(--sub); font-size:13px; padding:26px 20px; border-top:1px solid var(--line); margin-top:20px; }
+  footer a { color:var(--sub); margin:0 6px; }
+
+  @media (max-width:820px) { .welcome { grid-template-columns:1fr; } .grid { grid-template-columns:1fr 1fr; } article { padding:20px 18px; } }
+  @media (max-width:600px) { .pcard { flex-direction:column; align-items:stretch; } article .pcard a.pcard-img { flex:none; }
+    .pcard-img img { width:100%; height:200px; }
+    .pcard-btns a.pcard-btn { flex:1; padding:8px 10px; font-size:14px; }
+    .buybox-main { flex-direction:column; align-items:stretch; } article .buybox a.buybox-img { flex:none; align-self:center; } }
+  @media (max-width:520px) { .grid { grid-template-columns:1fr; } nav { margin-left:0; } .welcome h2 { font-size:20px; } article h1 { font-size:22px; } }
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="in">
+  <a class="logo" href="https://massan222.github.io/gadget-ai-lab/"><span class="ico">🔧</span>ガジェットとAIの作業部屋</a>
+  <nav><a href="https://massan222.github.io/gadget-ai-lab/category/gadget/">ガジェット・スマートホーム</a><a href="https://massan222.github.io/gadget-ai-lab/category/ai-tools/">AI活用・副業ツール</a><a href="https://massan222.github.io/gadget-ai-lab/about/">運営者情報</a></nav>
+</div></header>
+<main>
+
+<div class="narrow">
+<div class="crumbs"><a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><span>›</span><a href="https://massan222.github.io/gadget-ai-lab/category/gadget/">ガジェット・スマートホーム</a><span>›</span>この記事</div>
+<article>
+  <h1>SwitchBot入門 最初に揃えたいハブ2・プラグミニ・CO2センサー</h1>
+  <div class="meta">公開 2026-11-18 · 更新 2026-11-18 · ガジェット・スマートホーム</div>
+  <p><img src="https://massan222.github.io/gadget-ai-lab/images/41.png" alt="SwitchBot入門 最初に揃えたいハブ2・プラグミニ・CO2センサー"></p>
+  <p>※本記事はアフィリエイト広告を含みます</p>
+<div class="buybox"><p class="buybox-h">先に結論</p><div class="buybox-main"><a class="buybox-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/switchbot-starter-hub2-plug-co2"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09563522/imgrc0078660079.jpg?_ex=400x400" alt="SwitchBot ハブ2" width="120" height="120" loading="lazy"></a><div class="buybox-body"><p class="buybox-lead">迷ったらこれ</p><p class="buybox-name">SwitchBot ハブ2</p><p class="buybox-why">リモコン家電をまとめて動かせる最初の1台に</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/rakuten/switchbot-starter-hub2-plug-co2">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%258F%25E3%2583%25962" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/top/amazon/switchbot-starter-hub2-plug-co2">Amazonで探す</a></p></div></div><ul class="buybox-alts"><li><span class="buybox-label">低予算で試すなら</span><b>SwitchBot プラグミニ</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000043%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/switchbot-starter-hub2-plug-co2">楽天</a></li><li><span class="buybox-label">換気を意識するなら</span><b>SwitchBot CO2センサー</b><a class="tbtn" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/alt/rakuten/switchbot-starter-hub2-plug-co2">楽天</a></li></ul></div>
+
+<p>スマートホームに興味はあっても、「何から買えばいいのか分からない」と止まってしまう方は多いと思います。製品の種類が多く、アプリや対応機器の話も出てくるため、最初の一歩が重く感じられます。</p>
+<p>私は電気通信工事の施工管理をしていて、自宅ではSwitchBotのハブ・ボット・プラグ・温湿度計を使っています。この記事では、その経験もふまえて、入門者が最初に検討しやすい3つを紹介します。</p>
+<h2>先に押さえたい考え方</h2>
+<p>3つの役割は次のとおりです。</p>
+<ul>
+<li>ハブ2: 今ある家電をスマホから動かす「司令塔」</li>
+<li>プラグミニ: コンセントにつなぐ家電を入り切りする</li>
+<li>CO2センサー: 部屋の空気の状態を見える化する</li>
+</ul>
+<p>全部を一度に買う必要はありません。まず1つ入れて、使い勝手を確かめてから足すほうが失敗しにくいです。</p>
+<h2>選び方の要点</h2>
+<h3>1. 何を自動化したいかを先に決める</h3>
+<p>エアコンやテレビ、照明のリモコン操作をまとめたいなら、ハブが入口になります。リモコンのない普通の家電を時間で入り切りしたいなら、プラグが向いています。</p>
+<h3>2. 赤外線リモコンの仕組みを知っておく</h3>
+<p>赤外線とは、テレビのリモコンなどが使う目に見えない光の信号です。ハブはこの信号を学習して家電に送ります。</p>
+<p>注意点として、赤外線は一方通行の命令です。たとえばエアコンは、今ついているのか消えているのかをハブ側から読み取れません。私もStream Deck（ボタン式の操作デバイス）からSwitchBotを動かす自作プラグインを作りましたが、エアコンは操作が一方通行になりました。一方、サーキュレーターは状態が読めました。</p>
+<h3>3. 音声操作や外出先からの操作の対応を見る</h3>
+<p>AlexaやGoogle Homeなどの音声アシスタントと連携できるかは、商品ごとに確認しておきたい点です。ここで紹介する3つは、いずれも商品説明にスマホ連動などの記載があります。お持ちのスマホやスピーカーとの相性は、購入前に商品ページで見ておくと安心です。</p>
+<h2>SwitchBot スマートリモコン ハブ2</h2>
+<h3>特徴</h3>
+<p>赤外線リモコンの家電をまとめて操作できる、スマートリモコンです。スケジュールやシーン（複数の操作をまとめて実行する設定）にも対応しています。外出先からのスマホ操作や、Alexaなどの音声操作にも対応しています。</p>
+<p>さらに温湿度計と光センサーを内蔵しています。室温に合わせてエアコンを動かすといった使い方の土台になります。価格は執筆時点で9,980円、評価は4.61（1,989件）でした。</p>
+<h3>向いている人</h3>
+<ul>
+<li>エアコンや照明のリモコンを1つにまとめたい方</li>
+<li>スマートホームの最初の1台を探している方</li>
+<li>帰宅前にスマホで部屋を涼しくしたい方</li>
+</ul>
+<h3>注意点</h3>
+<p>3つの中では価格が高めです。また、先ほど書いたとおり赤外線の操作は一方通行で、家電の今の状態までは分かりません。「ついたつもり」にならないよう、状態が大事な場面では別の確認手段も考えてください。</p>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-starter-hub2-plug-co2"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09563522/imgrc0078660079.jpg?_ex=400x400" alt="SwitchBot ハブ2" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot ハブ2</p><p class="pcard-for">こんな人に：エアコンやテレビのリモコンを1つにまとめたい人</p><p class="pcard-meta">9,980円（執筆時点） · ★4.6（1,989件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000076%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-starter-hub2-plug-co2">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%258F%25E3%2583%25962" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/switchbot-starter-hub2-plug-co2">Amazonで探す</a></p></div></div>
+
+<h2>SwitchBot プラグミニ</h2>
+<h3>特徴</h3>
+<p>コンセントと家電の間に挟んで、電源を入り切りするスマートプラグです。BluetoothとWi-Fiの両方に対応し、タイマーや消費電力統計の機能があります。Alexa、Google Home、IFTTT、Siriなどとの連携が商品説明に記載されています。</p>
+<p>価格は執筆時点で1,980円、評価は4.35（449件）でした。入門向けとして手を出しやすい価格帯です。</p>
+<h3>向いている人</h3>
+<ul>
+<li>扇風機や間接照明など、昔ながらの家電を自動化したい方</li>
+<li>まずは低予算でスマートホームを試したい方</li>
+<li>家電ごとの消費電力が気になる方</li>
+</ul>
+<h3>注意点</h3>
+<p>電源を入り切りするだけなので、家電側のスイッチが「入」のままで使える機器が前提です。ボタンを押して動き出すタイプの機器には向きません。また、使える家電の消費電力には上限があります。つなぐ前に商品ページで仕様を確認してください。</p>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000043%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-starter-hub2-plug-co2"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/09377825/09377899/20261027-114834.jpg?_ex=400x400" alt="SwitchBot プラグミニ" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot プラグミニ</p><p class="pcard-for">こんな人に：扇風機など昔ながらの家電を低予算で自動化したい人</p><p class="pcard-meta">1,980円（執筆時点） · ★4.3（449件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000043%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-starter-hub2-plug-co2">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2B%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B0%25E3%2583%259F%25E3%2583%258B" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/switchbot-starter-hub2-plug-co2">Amazonで探す</a></p></div></div>
+
+<h2>SwitchBot CO2センサー</h2>
+<h3>特徴</h3>
+<p>二酸化炭素濃度と温湿度を測る、卓上タイプのモニターです。大画面で数値が見やすく、アラームやスマホへのアラート通知、グラフ記録に対応しています。時計やカレンダー、天気予報の表示もできると商品説明にあります。</p>
+<p>価格は執筆時点で7,980円、評価は4.66（701件）でした。なお、私が自宅で使っているのはハブ・ボット・プラグ・温湿度計で、このCO2センサーは使っていません。ここは商品情報とレビューの評価をもとに紹介しています。</p>
+<h3>向いている人</h3>
+<ul>
+<li>在宅ワークで、部屋の換気のタイミングを見える化したい方</li>
+<li>数値をグラフで残して、あとから見返したい方</li>
+<li>大きな画面で、ひと目で状態を確認したい方</li>
+</ul>
+<h3>注意点</h3>
+<p>これ自体は家電を動かす機器ではなく、空気の状態を測る機器です。そのため、最初の1台としては、家電を動かせるハブやプラグのほうが「スマートホームらしさ」を実感しやすいかもしれません。数値の見方は、メーカーの案内も合わせて確認してください。</p>
+<div class="pcard"><a class="pcard-img" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-starter-hub2-plug-co2"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/switchbot/cabinet/09377790/c02/amazon/imgrc0082574109.jpg?_ex=400x400" alt="SwitchBot CO2センサー" loading="lazy"></a><div class="pcard-body"><p class="pcard-name">SwitchBot CO2センサー</p><p class="pcard-for">こんな人に：在宅ワークで換気のタイミングを見える化したい人</p><p class="pcard-meta">7,980円（執筆時点） · ★4.7（701件） · SwitchBot公式店</p><p class="pcard-btns"><a class="pcard-btn rakuten" href="https://af.moshimo.com/af/c/click?a_id=5805145&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/rakuten/switchbot-starter-hub2-plug-co2">楽天で見る</a><a class="pcard-btn amazon" href="https://af.moshimo.com/af/c/click?a_id=5805147&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DSwitchBot%2BCO2%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B5%25E3%2583%25BC" rel="sponsored nofollow noopener" target="_blank" data-goatcounter-click="aff/card/amazon/switchbot-starter-hub2-plug-co2">Amazonで探す</a></p></div></div>
+
+<h2>3つの比較表</h2>
+<p>価格は執筆時点のものです。</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>ハブ2</th>
+<th>プラグミニ</th>
+<th>CO2センサー</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>役割</td>
+<td>赤外線家電の司令塔</td>
+<td>家電の電源入り切り</td>
+<td>空気の見える化</td>
+</tr>
+<tr>
+<td>価格</td>
+<td>9,980円</td>
+<td>1,980円</td>
+<td>7,980円</td>
+</tr>
+<tr>
+<td>評価</td>
+<td>4.61（1,989件）</td>
+<td>4.35（449件）</td>
+<td>4.66（701件）</td>
+</tr>
+<tr>
+<td>温湿度の計測</td>
+<td>あり</td>
+<td>なし</td>
+<td>あり</td>
+</tr>
+<tr>
+<td>家電を動かす</td>
+<td>赤外線で操作</td>
+<td>電源の入り切り</td>
+<td>動かさない</td>
+</tr>
+<tr>
+<td>向く人</td>
+<td>最初の1台に</td>
+<td>低予算で試したい</td>
+<td>換気を意識したい</td>
+</tr>
+</tbody>
+</table></div>
+<h2>買う順番の考え方</h2>
+<p>迷ったときは、次の順番で考えると決めやすいです。</p>
+<ol>
+<li>エアコンやテレビを操作したい: ハブ2</li>
+<li>低予算で試したい: プラグミニ</li>
+<li>空気の状態を知りたい: CO2センサー</li>
+</ol>
+<p>ハブ2は温湿度計も兼ねるので、1台で「操作」と「計測」の両方を試せます。のちにプラグを足せば、リモコンのない家電も自動化の対象にできます。</p>
+<h2>まとめ</h2>
+<p>入門で選びやすいのは、赤外線家電をまとめて動かせるハブ2です。予算を抑えたい場合は、プラグミニから始める方法もあります。CO2センサーは、換気や空気の状態を知りたくなったときの追加として検討しやすい商品です。</p>
+<p>赤外線の操作は一方通行で、家電の状態までは読み取れません。この点だけ頭に入れておけば、あとは使いながら少しずつ広げていけます。価格や在庫は変わるため、購入前に各ショップの最新情報をご確認ください。</p>
+</article>
+<div class="back">
+  <a class="btn sub" href="https://massan222.github.io/gadget-ai-lab/category/gadget/">ガジェット・スマートホームの記事一覧</a>
+  <a class="btn" href="https://massan222.github.io/gadget-ai-lab/">← トップへ戻る</a>
+</div>
+</div>
+
+<h2 class="sec">関連記事</h2>
+<div class="grid"><a class="acard" href="https://massan222.github.io/gadget-ai-lab/posts/switchbot-beginner-hub-plug-sensor/">
+  <div class="thumb"><img src="https://massan222.github.io/gadget-ai-lab/images/39.png" alt="" loading="lazy"></div>
+  <div class="body"><span class="label">ガジェット・スマートホーム</span>
+    <h3>SwitchBot入門 最初に買うハブ・プラグ・センサー</h3><p class="date">2026.11.16</p></div>
+</a><a class="acard" href="https://massan222.github.io/gadget-ai-lab/posts/thermo-hygrometer-guide-by-use/">
+  <div class="thumb"><img src="https://massan222.github.io/gadget-ai-lab/images/35.png" alt="" loading="lazy"></div>
+  <div class="body"><span class="label">ガジェット・スマートホーム</span>
+    <h3>温湿度計の選び方 用途別｜熱中症と乾燥の見える化</h3><p class="date">2026.11.09</p></div>
+</a><a class="acard" href="https://massan222.github.io/gadget-ai-lab/posts/smart-thermo-hygrometer-upgrade-4/">
+  <div class="thumb"><img src="https://massan222.github.io/gadget-ai-lab/images/31.png" alt="" loading="lazy"></div>
+  <div class="body"><span class="label">ガジェット・スマートホーム</span>
+    <h3>温湿度計はスマホで見える化｜買い替え4選</h3><p class="date">2026.11.02</p></div>
+</a></div>
+
+</main>
+<footer>
+  <a href="https://massan222.github.io/gadget-ai-lab/">トップ</a><a href="https://massan222.github.io/gadget-ai-lab/about/">運営者情報</a><a href="https://massan222.github.io/gadget-ai-lab/disclaimer/">免責事項</a><a href="https://massan222.github.io/gadget-ai-lab/privacy/">プライバシーポリシー</a><a href="https://massan222.github.io/gadget-ai-lab/feed.xml">RSS</a>
+  <div>© 2026 まっさん — 当サイトはアフィリエイト広告を利用しています</div>
+</footer>
+<script data-goatcounter="https://massan.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
